@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MacMo Electronics | Smartphones, Laptops, Gaming &amp; Tech Store Lusaka</title>
+  <meta name="description" content="MacMo Electronics — Lusaka's premier electronics store at Shop #1 Silverest Complex (opposite UNILUS). Authentic smartphones, laptops, PlayStation consoles, iPads, and load-shedding backup power." />
+  <meta name="keywords" content="MacMo Electronics, electronics Lusaka, phones Lusaka, iPhones Zambia, laptops Lusaka, PS5 Lusaka, UNILUS electronics, trade in phone Lusaka, load shedding inverters Lusaka" />
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:title" content="MacMo Electronics — Next-Gen Tech &amp; Smart Upgrades" />
+  <meta property="og:description" content="Shop smartphones, laptops, PlayStation 5, iPads, and power stations at Shop #1 Silverest Complex, Lusaka (Opposite UNILUS). Fast WhatsApp delivery." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://macmoelectronics.netlify.app/images/macmo-logo-3d.png" />
+  <meta property="og:url" content="https://macmoelectronics.netlify.app/" />
+
+  <!-- Mobile & PWA -->
+  <meta name="theme-color" content="#0a70b9" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/macmo-emblem-3d.png" />
+  <link rel="apple-touch-icon" href="images/macmo-emblem-3d.png" />
+
+  <!-- Fonts: Rubik, Outfit & Plus Jakarta Sans (OneTech Typography) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6.5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=10.0" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Brand Preloader -->
+  <div class="site-preloader" id="sitePreloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-emblem-wrap">
+        <img src="images/macmo-emblem-3d.png" alt="MacMo Electronics Emblem" class="preloader-emblem" />
+        <div class="preloader-spinner-ring"></div>
+      </div>
+      <div class="preloader-brand-title">MacMo Electronics</div>
+      <div class="preloader-tagline">Next-Gen Tech &amp; Smart Upgrades &bull; Lusaka</div>
+    </div>
+  </div>
+
+  <!-- OneTech Style Top Bar -->
+  <aside class="announcement-bar onetech-topbar" aria-label="Store Contact &amp; Perks">
+    <div class="announcement-inner container">
+      <div class="topbar-left">
+        <a href="tel:+260972756767" class="topbar-item">
+          <i class="fa-solid fa-phone-volume"></i> +260 972 756 767
+        </a>
+        <span class="announcement-divider">|</span>
+        <span class="topbar-item">
+          <i class="fa-solid fa-location-dot"></i> Shop #1, Silverest Complex (Opp. UNILUS)
+        </span>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-item hide-on-mobile"><i class="fa-solid fa-truck-fast"></i> Same-Day Lusaka &amp; Free UNILUS Delivery</span>
+        <span class="announcement-divider hide-on-mobile">|</span>
+        <span class="topbar-item hide-on-mobile"><i class="fa-solid fa-shield-halved"></i> 12-Month Warranty</span>
+        <span class="announcement-divider hide-on-mobile">|</span>
+        <a href="https://wa.me/260972756767" class="announcement-contact" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Order Desk
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- OneTech Multi-Tier Header -->
+  <header class="site-header onetech-header" id="siteHeader">
+    <!-- Tier 1: Logo + Unified Search + Wishlist/Bag -->
+    <div class="header-main-row">
+      <div class="header-inner container">
+        <!-- Brand Logo -->
+        <a href="#hero" class="brand-link" aria-label="MacMo Electronics Home">
+          <img src="images/macmo-emblem-3d.png" alt="MacMo Electronics Logo" class="brand-logo-img" />
+          <div class="brand-text-block">
+            <span class="brand-name">MacMo</span>
+            <span class="brand-sub">Electronics &bull; Lusaka</span>
+          </div>
+        </a>
+
+        <!-- OneTech Header Search Bar (Desktop & Tablet) -->
+        <div class="onetech-header-search" role="search">
+          <input type="text" id="headerQuickSearchInput" class="onetech-search-input" placeholder="Search for phones, laptops, PS5, power stations..." autocomplete="off" />
+          <div class="onetech-search-cat-wrap">
+            <select id="headerSearchCategory" class="onetech-search-select" aria-label="Filter search by category">
+              <option value="all">All Categories</option>
+              <option value="phones">Smartphones</option>
+              <option value="computers">Laptops</option>
+              <option value="gaming">PlayStation &amp; Gaming</option>
+              <option value="tablets">iPads &amp; Tablets</option>
+              <option value="audio">Audio &amp; Speakers</option>
+              <option value="wearables">Smartwatches</option>
+              <option value="power">Power &amp; Backup</option>
+              <option value="accessories">Accessories</option>
+            </select>
+          </div>
+          <button type="button" class="onetech-search-btn" onclick="window.triggerHeaderSearch()" aria-label="Search Store">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- Header Right Widgets (OneTech Wishlist + Bag + Mobile Controls) -->
+        <div class="header-actions">
+          <!-- Mobile Search Modal Trigger -->
+          <button type="button" class="action-btn show-on-mobile-only" id="search-btn" aria-label="Search Catalog" title="Search Devices">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <!-- Wishlist Widget -->
+          <button type="button" class="onetech-widget-btn" id="wishlist-btn" aria-label="Wishlist" title="Saved Items" onclick="window.showWishlistModal()">
+            <div class="widget-icon-wrap">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-badge" id="wish-count-badge" style="display: none;">0</span>
+            </div>
+            <div class="widget-text-wrap hide-on-phone">
+              <span class="widget-title">Wishlist</span>
+              <span class="widget-sub">Saved Tech</span>
+            </div>
+          </button>
+
+          <!-- Shopping Bag Widget -->
+          <button type="button" class="onetech-widget-btn" id="cart-btn" aria-label="Cart" title="Shopping Bag">
+            <div class="widget-icon-wrap">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="action-badge" id="cart-count-badge" style="display: none;">0</span>
+            </div>
+            <div class="widget-text-wrap hide-on-phone">
+              <span class="widget-title">My Bag</span>
+              <span class="widget-sub" id="header-cart-total-label">Order Now</span>
+            </div>
+          </button>
+
+          <!-- Mobile Hamburger Button -->
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tier 2: OneTech Blue Categories Bar & Main Nav (Desktop) -->
+    <div class="onetech-nav-bar">
+      <div class="container onetech-nav-inner">
+        <!-- Categories Dropdown Trigger -->
+        <div class="onetech-cat-menu-container">
+          <button type="button" class="onetech-cat-trigger" id="catDropdownBtn" aria-expanded="false">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <span>BROWSE CATEGORIES</span>
+            <i class="fa-solid fa-chevron-down cat-chevron"></i>
+          </button>
+          <ul class="onetech-cat-dropdown" id="catDropdownList">
+            <li><a href="#store" onclick="window.filterByCat('all')"><i class="fa-solid fa-border-all"></i> All Tech Inventory <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+            <li><a href="#store" onclick="window.filterByCat('phones')"><i class="fa-solid fa-mobile-screen-button"></i> Smartphones (iPhone &amp; Galaxy) <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+            <li><a href="#store" onclick="window.filterByCat('computers')"><i class="fa-solid fa-laptop"></i> Laptops &amp; Workstations <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+            <li><a href="#store" onclick="window.filterByCat('gaming')"><i class="fa-solid fa-gamepad"></i> PlayStation 5 &amp; Gaming <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+            <li><a href="#store" onclick="window.filterByCat('tablets')"><i class="fa-solid fa-tablet-screen-button"></i> iPads &amp; Tablets <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+            <li><a href="#store" onclick="window.filterByCat('audio')"><i class="fa-solid fa-headphones"></i> Audio, Earbuds &amp; JBL <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+            <li><a href="#store" onclick="window.filterByCat('wearables')"><i class="fa-solid fa-clock"></i> Smartwatches &amp; Fitness <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+            <li><a href="#store" onclick="window.filterByCat('power')"><i class="fa-solid fa-bolt"></i> Power Stations &amp; Load-Shedding <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+            <li><a href="#store" onclick="window.filterByCat('accessories')"><i class="fa-solid fa-plug"></i> Chargers &amp; Creator Gear <i class="fa-solid fa-angle-right ms-auto"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Primary Navigation Links -->
+        <nav class="site-nav onetech-main-links" aria-label="Primary Navigation">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#store" class="nav-link">Shop Catalog</a>
+          <a href="#trade-in" class="nav-link highlight"><i class="fa-solid fa-repeat"></i> Trade-In &amp; 0% Layby</a>
+          <a href="#business" class="nav-link"><i class="fa-solid fa-briefcase"></i> Corporate &amp; Campus</a>
+          <a href="#reviews" class="nav-link">Reviews</a>
+          <a href="#contact" class="nav-link">Showroom</a>
+        </nav>
+
+        <!-- Direct WhatsApp Hotline Pill -->
+        <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics,%20I%20would%20like%20to%20inquire%20about%20a%20device" target="_blank" rel="noopener" class="btn-header-wa hide-on-phone" title="Chat on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> 0972 756 767
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+      <a href="#store" class="mobile-nav-link" onclick="window.filterByCat('all'); window.closeMobileNav()"><span><i class="fa-solid fa-border-all"></i> All Tech Inventory</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#store" class="mobile-nav-link" onclick="window.filterByCat('phones'); window.closeMobileNav()"><span><i class="fa-solid fa-mobile-screen-button"></i> Smartphones (Apple &amp; Samsung)</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#store" class="mobile-nav-link" onclick="window.filterByCat('computers'); window.closeMobileNav()"><span><i class="fa-solid fa-laptop"></i> Laptops</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#store" class="mobile-nav-link" onclick="window.filterByCat('gaming'); window.closeMobileNav()"><span><i class="fa-solid fa-gamepad"></i> PlayStation 5 &amp; Gaming</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#store" class="mobile-nav-link" onclick="window.filterByCat('power'); window.closeMobileNav()"><span><i class="fa-solid fa-bolt"></i> Power &amp; Load-Shedding Hub</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#trade-in" class="mobile-nav-link highlight" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-repeat"></i> Trade-In &amp; 0% Layby Calculator</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#business" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-briefcase"></i> Corporate &amp; Campus Priority</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#reviews" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-star"></i> Customer Reviews</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#contact" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-location-dot"></i> Showroom Location &amp; Hours</span> <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="https://wa.me/260972756767" target="_blank" rel="noopener" class="mobile-nav-link wa-direct-link"><span><i class="fa-brands fa-whatsapp"></i> WhatsApp Hotline (0972 756 767)</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- 1. ONETECH-INSPIRED HERO BANNER (CLEAN, UNCLUTTERED & MOBILE-OPTIMIZED) -->
+    <section class="hero-section onetech-banner" id="hero">
+      <div class="onetech-banner-bg" aria-hidden="true"></div>
+
+      <div class="hero-inner container">
+        <!-- Left Column: Headlines, Featured Deal Price & Quick Search -->
+        <div class="hero-content">
+          <div class="onetech-eyebrow">
+            <span class="status-dot"></span>
+            <span>LUSAKA'S PREMIER ELECTRONICS &amp; GAMING HUB</span>
+          </div>
+
+          <h1 class="hero-title">
+            Next-Gen Tech &amp; Smart Upgrades.
+            <span class="hero-title-highlight">Phones, Laptops, Gaming &amp; Power.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Experience genuine smartphones, high-performance laptops, PlayStation 5 consoles, and backup power stations at Shop #1 Silverest Complex (Opp. UNILUS).
+          </p>
+
+          <!-- OneTech Featured Product Price Callout & Primary Actions -->
+          <div class="onetech-hero-deal-strip">
+            <div class="onetech-deal-price-box">
+              <span class="onetech-deal-label" id="heroFeaturedTag">FEATURED FLAGSHIP</span>
+              <div class="onetech-deal-price-line">
+                <span class="onetech-old-price" id="heroFeaturedOldPrice">K 26,500</span>
+                <span class="onetech-new-price" id="heroFeaturedPrice">K 24,999</span>
+              </div>
+              <span class="onetech-deal-name" id="heroFeaturedName">Apple iPhone 15 Pro Max &bull; 256GB Titanium</span>
+            </div>
+
+            <div class="onetech-hero-btns">
+              <a href="#store" class="btn-onetech-primary">
+                <span>Explore Catalog</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#trade-in" class="btn-onetech-outline">
+                <i class="fa-solid fa-repeat"></i>
+                <span>Trade-In / Layby</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Mobile / Quick Search & Swipeable Category Strip -->
+          <div class="hero-search-wrapper">
+            <div class="hero-search-bar show-on-mobile-search">
+              <i class="fa-solid fa-magnifying-glass hero-search-icon"></i>
+              <input type="text" id="heroQuickSearchInput" placeholder="Quick search: iPhone, Laptop, PS5, S24, EcoFlow..." autocomplete="off" />
+              <button type="button" class="hero-search-btn" onclick="window.triggerHeroSearch()">Search</button>
+            </div>
+            <div class="hero-quick-tags" aria-label="Quick Category Filters">
+              <button type="button" class="quick-tag" onclick="window.filterByCat('phones')"><i class="fa-solid fa-mobile-screen-button"></i> Smartphones</button>
+              <button type="button" class="quick-tag" onclick="window.filterByCat('computers')"><i class="fa-solid fa-laptop"></i> Laptops</button>
+              <button type="button" class="quick-tag" onclick="window.filterByCat('gaming')"><i class="fa-solid fa-gamepad"></i> PlayStation 5</button>
+              <button type="button" class="quick-tag" onclick="window.filterByCat('power')"><i class="fa-solid fa-bolt"></i> Power Stations</button>
+              <a href="#trade-in" class="quick-tag tag-highlight"><i class="fa-solid fa-box-archive"></i> 0% Layby</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: OneTech Interactive Product Spotlight -->
+        <div class="hero-visual-card onetech-spotlight-card">
+          <div class="onetech-spotlight-top">
+            <span class="onetech-spotlight-badge" id="heroSpotlightBadge"><i class="fa-solid fa-bolt"></i> Hot Deal</span>
+            <span class="onetech-spotlight-layby" id="heroSpotlightLayby">0% Layby: K 5,000 dep.</span>
+          </div>
+
+          <div class="hero-device-wrapper" onclick="window.openHeroActiveSpecs()">
+            <img src="images/iphone-15-pro-max.jpg" alt="Featured Device Showcase" class="hero-device-img" id="heroSpotlightImg" width="340" height="340" />
+          </div>
+
+          <div class="onetech-spotlight-Meta">
+            <div class="onetech-spotlight-specs" id="heroSpotlightSpecs">A17 Pro 3nm &bull; 48MP 5x Zoom &bull; 12-Mo Warranty</div>
+            <button type="button" class="btn-onetech-wa-hero" id="heroSpotlightWaBtn" onclick="window.orderHeroActiveWA()">
+              <i class="fa-brands fa-whatsapp"></i> Order Featured Device on WhatsApp
+            </button>
+          </div>
+
+          <!-- Interactive Switcher Dots / Tabs -->
+          <div class="onetech-hero-switcher" role="tablist" aria-label="Featured Hardware Switcher">
+            <button type="button" class="hero-switch-pill active" onclick="window.switchHeroSpotlight(0)">iPhone 15 Pro Max</button>
+            <button type="button" class="hero-switch-pill" onclick="window.switchHeroSpotlight(1)">PS5 Slim</button>
+            <button type="button" class="hero-switch-pill" onclick="window.switchHeroSpotlight(2)">Laptops</button>
+            <button type="button" class="hero-switch-pill" onclick="window.switchHeroSpotlight(3)">Galaxy S24 Ultra</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1B. ONETECH 4-COLUMN CHARACTERISTICS STRIP -->
+    <section class="onetech-characteristics" aria-label="MacMo Store Guarantees">
+      <div class="container">
+        <div class="char-grid">
+          <div class="char-card">
+            <div class="char-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="char-info">
+              <div class="char-title">Express Delivery</div>
+              <div class="char-sub">Free UNILUS Drop &bull; Same-Day Lusaka</div>
+            </div>
+          </div>
+
+          <div class="char-card">
+            <div class="char-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="char-info">
+              <div class="char-title">12-Month Warranty</div>
+              <div class="char-sub">100% Genuine Sealed Hardware</div>
+            </div>
+          </div>
+
+          <div class="char-card">
+            <div class="char-icon"><i class="fa-solid fa-box-archive"></i></div>
+            <div class="char-info">
+              <div class="char-title">0% Interest Layby</div>
+              <div class="char-sub">Flexible 1 to 3 Month Plans</div>
+            </div>
+          </div>
+
+          <div class="char-card">
+            <div class="char-icon"><i class="fa-solid fa-repeat"></i></div>
+            <div class="char-info">
+              <div class="char-title">Instant Trade-In</div>
+              <div class="char-sub">Swap Old Phones &amp; Consoles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. STORE & INVENTORY SECTION (ONETECH TABBED CATALOG) -->
+    <section class="section catalog-section" id="store">
+      <div class="container catalog-container">
+        <div class="onetech-catalog-header">
+          <div class="onetech-catalog-title-block">
+            <span class="section-pill">OFFICIAL INVENTORY &bull; SHOP #1 SILVEREST</span>
+            <h2 class="section-title">Featured Tech &amp; New Arrivals</h2>
+          </div>
+
+          <!-- Search and Sort Controls -->
+          <div class="catalog-controls">
+            <div class="search-input-wrap">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" id="catalogSearchInput" placeholder="Filter by model, brand, or specs..." autocomplete="off" />
+              <button type="button" class="clear-search-btn" id="clearSearchBtn" aria-label="Clear Search">&times;</button>
+            </div>
+            <div class="sort-select-wrap">
+              <select id="catalogSortSelect" class="sort-select" aria-label="Sort products">
+                <option value="featured">Sort: Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Filter Tabs (OneTech Underline/Pill Bar) -->
+        <div class="category-filter-tabs onetech-tabs-bar" role="tablist">
+          <button type="button" class="filter-tab-btn active" data-category="all"><i class="fa-solid fa-border-all"></i> All Products</button>
+          <button type="button" class="filter-tab-btn" data-category="phones"><i class="fa-solid fa-mobile-screen-button"></i> Smartphones</button>
+          <button type="button" class="filter-tab-btn" data-category="computers"><i class="fa-solid fa-laptop"></i> Laptops</button>
+          <button type="button" class="filter-tab-btn" data-category="gaming"><i class="fa-solid fa-gamepad"></i> PlayStation 5</button>
+          <button type="button" class="filter-tab-btn" data-category="tablets"><i class="fa-solid fa-tablet-screen-button"></i> iPads &amp; Tablets</button>
+          <button type="button" class="filter-tab-btn" data-category="audio"><i class="fa-solid fa-headphones"></i> Audio</button>
+          <button type="button" class="filter-tab-btn" data-category="wearables"><i class="fa-solid fa-clock"></i> Smartwatches</button>
+          <button type="button" class="filter-tab-btn" data-category="power"><i class="fa-solid fa-bolt"></i> Power &amp; Backup</button>
+          <button type="button" class="filter-tab-btn" data-category="accessories"><i class="fa-solid fa-plug"></i> Accessories</button>
+        </div>
+
+        <!-- Live Status Bar -->
+        <div class="catalog-live-counter-bar">
+          <span class="catalog-counter-pill" id="catalogLiveCount">Showing all devices in stock</span>
+          <span class="catalog-hint hide-on-phone"><i class="fa-solid fa-box-archive"></i> 0% Interest Layby available on all devices with a 20% deposit</span>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. UNIFIED TRADE-IN & LAYBY SERVICES HUB -->
+    <section class="trade-in-section" id="trade-in">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 24px;">
+          <span class="section-pill"><i class="fa-solid fa-repeat"></i> FLEXIBLE UPGRADE &amp; PAYMENT SERVICES</span>
+          <h2 class="section-title">Trade-In or Layby Your Next Device</h2>
+          <p class="section-desc">Upgrade your old phone, laptop, or console with instant trade-in credit, or reserve any device on a 0% interest Layby plan.</p>
+        </div>
+
+        <!-- Segmented Tab Switcher -->
+        <div class="service-tab-switcher">
+          <button type="button" class="service-switcher-btn active" id="btnServiceTradeIn" onclick="window.switchServiceTab('trade-in')">
+            <i class="fa-solid fa-repeat"></i> Phone &amp; Console Trade-In
+          </button>
+          <button type="button" class="service-switcher-btn" id="btnServiceLayby" onclick="window.switchServiceTab('layby')">
+            <i class="fa-solid fa-box-archive"></i> Flexible Layby Plan (0% Interest)
+          </button>
+        </div>
+
+        <!-- TAB 1: DEVICE TRADE-IN CALCULATOR -->
+        <div class="service-view-panel active" id="service-view-tradein">
+          <div class="trade-in-grid">
+            <div class="trade-in-text">
+              <span class="section-pill"><i class="fa-solid fa-repeat"></i> MACMO SWAP PROGRAM</span>
+              <h2>Trade In Your Old Device. Upgrade in 15 Minutes.</h2>
+              <p>
+                Have an iPhone 11, 12, 13, 14, Samsung Galaxy, Laptop, or PS4? Get instant valuation credit towards a brand-new flagship smartphone, laptop, or PlayStation 5 console.
+              </p>
+              <ul class="trade-in-steps">
+                <li>
+                  <span class="step-num">01</span>
+                  <div>
+                    <strong>Select your current device</strong>
+                    <p>Choose brand, model, and physical condition.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">02</span>
+                  <div>
+                    <strong>See your instant trade-in credit</strong>
+                    <p>View estimated trade-in value and difference to top up.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">03</span>
+                  <div>
+                    <strong>Visit Shop #1 Silverest or WhatsApp us</strong>
+                    <p>Quick 10-minute check at our counter and walk out upgraded.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Trade-In Calculator Card -->
+            <div class="trade-in-calculator">
+              <div class="calc-header">
+                <h3><i class="fa-solid fa-calculator"></i> Instant Trade-In Valuation</h3>
+                <span class="calc-badge">Live Silverest Rates</span>
+              </div>
+
+              <form id="trade-in-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                  <label for="trade-brand">Brand of your current device</label>
+                  <select id="trade-brand" class="form-select" onchange="window.onTradeBrandChange && window.onTradeBrandChange()">
+                    <option value="Apple" selected>Apple (iPhone)</option>
+                    <option value="Samsung">Samsung (Galaxy)</option>
+                    <option value="Sony">Sony PlayStation Console</option>
+                    <option value="MacBook">Laptops &amp; iPads</option>
+                    <option value="Google">Google Pixel</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="trade-model">Current Model</label>
+                  <select id="trade-model" class="form-select" onchange="window.calculateTradeIn && window.calculateTradeIn()">
+                    <option value="ip-15-pm" data-base="20000">Apple iPhone 15 Pro Max (~K 20,000)</option>
+                    <option value="ip-15-p" data-base="17500">Apple iPhone 15 Pro (~K 17,500)</option>
+                    <option value="ip-15" data-base="13000">Apple iPhone 15 (~K 13,000)</option>
+                    <option value="ip-14-pm" data-base="15500" selected>Apple iPhone 14 Pro Max (~K 15,500)</option>
+                    <option value="ip-14-p" data-base="13500">Apple iPhone 14 Pro (~K 13,500)</option>
+                    <option value="ip-14" data-base="10500">Apple iPhone 14 (~K 10,500)</option>
+                    <option value="ip-13-pm" data-base="12500">Apple iPhone 13 Pro Max (~K 12,500)</option>
+                    <option value="ip-13-p" data-base="11000">Apple iPhone 13 Pro (~K 11,000)</option>
+                    <option value="ip-13" data-base="8800">Apple iPhone 13 (~K 8,800)</option>
+                    <option value="ip-12-pm" data-base="9500">Apple iPhone 12 Pro Max (~K 9,500)</option>
+                    <option value="ip-12-p" data-base="8200">Apple iPhone 12 Pro (~K 8,200)</option>
+                    <option value="ip-12" data-base="6800">Apple iPhone 12 (~K 6,800)</option>
+                    <option value="ip-11-pm" data-base="6500">Apple iPhone 11 Pro Max (~K 6,500)</option>
+                    <option value="ip-11" data-base="4800">Apple iPhone 11 (~K 4,800)</option>
+                    <option value="ip-xr-xs" data-base="3500">Apple iPhone XR / XS Max (~K 3,500)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="trade-condition">Device Condition</label>
+                  <select id="trade-condition" class="form-select" onchange="window.calculateTradeIn && window.calculateTradeIn()">
+                    <option value="flawless">Flawless / Pristine (No scratches, 100% working)</option>
+                    <option value="good" selected>Good Condition (Minor scuffs, fully working screen)</option>
+                    <option value="fair">Fair (Visible scratches, minor battery wear)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="trade-target">What would you like to upgrade to?</label>
+                  <select id="trade-target" class="form-select" onchange="window.calculateTradeIn && window.calculateTradeIn()">
+                    <option value="p-iphone-15-pro-max" data-price="24999" selected>Apple iPhone 15 Pro Max (K 24,999.00)</option>
+                    <option value="p-iphone-15-black" data-price="17899">Apple iPhone 15 (128GB) (K 17,899.00)</option>
+                    <option value="p-iphone-14-pro-max" data-price="19999">Apple iPhone 14 Pro Max 256GB (K 19,999.00)</option>
+                    <option value="p-iphone-13" data-price="12499">Apple iPhone 13 128GB (K 12,499.00)</option>
+                    <option value="p-ps5-slim" data-price="13999">Sony PlayStation 5 Slim Console (K 13,999.00)</option>
+                    <option value="p-macbook-air-m3" data-price="28999">Apple MacBook Air 15" M3 Laptop (K 28,999.00)</option>
+                    <option value="p-samsung-galaxy-s24-ultra" data-price="22499">Samsung Galaxy S24 Ultra (K 22,499.00)</option>
+                    <option value="p-ipad-air-m2" data-price="14899">Apple iPad Air 11" M2 (K 14,899.00)</option>
+                    <option value="p-romoss-60000" data-price="1950">Romoss 60,000mAh Power Station (K 1,950.00)</option>
+                  </select>
+                </div>
+
+                <!-- Output Card -->
+                <div class="trade-result-card">
+                  <div class="result-row">
+                    <span>Estimated Trade-In Credit:</span>
+                    <span class="trade-credit-val" id="trade-credit-val">K 17,000.00</span>
+                  </div>
+                  <div class="result-row highlight">
+                    <span>Estimated Difference to Pay:</span>
+                    <span class="trade-diff-val" id="trade-diff-val">K 7,999.00</span>
+                  </div>
+                </div>
+
+                <button type="button" class="btn-primary-tech calc-submit-btn" id="book-trade-in-btn">
+                  <i class="fa-brands fa-whatsapp"></i> Book Trade-In on WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: SMART LAYBY PAYMENT CALCULATOR -->
+        <div class="service-view-panel" id="service-view-layby" style="display: none;">
+          <div class="trade-in-grid">
+            <div class="trade-in-text">
+              <span class="section-pill" style="color: #15803d; border-color: rgba(37,211,102,0.4);"><i class="fa-solid fa-box-archive"></i> MACMO 0% LAYBY PROGRAM</span>
+              <h2>Reserve Your Device with 0% Interest Today.</h2>
+              <p>
+                Lock in your smartphone, laptop, PlayStation 5, or backup power station with a flexible initial deposit. Pay the balance over 1 to 3 months with zero interest and collect sealed in-store.
+              </p>
+              <ul class="trade-in-steps">
+                <li>
+                  <span class="step-num">01</span>
+                  <div>
+                    <strong>Choose your target device &amp; deposit</strong>
+                    <p>Start with 20%, 30%, or 50% deposit to lock the device and price.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">02</span>
+                  <div>
+                    <strong>Pay at your pace over 1 to 3 months</strong>
+                    <p>0% interest, no hidden fees, pay via Airtel Money, MTN, or Bank.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">03</span>
+                  <div>
+                    <strong>Collect sealed or get free UNILUS delivery</strong>
+                    <p>Your unit is safely reserved for you at Shop #1 Silverest Complex.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Layby Trust Badges -->
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px;">
+                <span class="calc-badge" style="background: rgba(37,211,102,0.12); color:#15803d; border-color: rgba(37,211,102,0.3);"><i class="fa-solid fa-lock"></i> Price Lock Guarantee</span>
+                <span class="calc-badge"><i class="fa-solid fa-percent"></i> 0% Interest Always</span>
+                <span class="calc-badge"><i class="fa-solid fa-building-columns"></i> Corporate &amp; Student Friendly</span>
+              </div>
+            </div>
+
+            <!-- Layby Calculator Card -->
+            <div class="trade-in-calculator">
+              <div class="calc-header">
+                <h3><i class="fa-solid fa-calculator" style="color:#16a34a;"></i> Smart Layby Calculator</h3>
+                <span class="calc-badge" style="background: rgba(37,211,102,0.12); color:#15803d; border-color: rgba(37,211,102,0.3);">0% Interest Plan</span>
+              </div>
+
+              <form id="layby-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                  <label for="layby-device-select">Select device to layby</label>
+                  <select id="layby-device-select" class="form-select" onchange="window.calculateLayby && window.calculateLayby()">
+                    <option value="p-iphone-15-pro-max" data-price="24999" selected>Apple iPhone 15 Pro Max — K 24,999.00</option>
+                    <option value="p-iphone-15-black" data-price="17899">Apple iPhone 15 (128GB) — K 17,899.00</option>
+                    <option value="p-iphone-14-pro-max" data-price="19999">Apple iPhone 14 Pro Max 256GB — K 19,999.00</option>
+                    <option value="p-iphone-13" data-price="12499">Apple iPhone 13 128GB — K 12,499.00</option>
+                    <option value="p-ps5-slim" data-price="13999">Sony PlayStation 5 Slim Console — K 13,999.00</option>
+                    <option value="p-macbook-air-m3" data-price="28999">Apple MacBook Air 15" M3 Laptop — K 28,999.00</option>
+                    <option value="p-samsung-galaxy-s24-ultra" data-price="22499">Samsung Galaxy S24 Ultra — K 22,499.00</option>
+                    <option value="p-ipad-air-m2" data-price="14899">Apple iPad Air 11" M2 — K 14,899.00</option>
+                    <option value="p-ecoflow-river-2" data-price="9499">EcoFlow River 2 Max Power Station — K 9,499.00</option>
+                    <option value="p-romoss-60000" data-price="1950">Romoss 60,000mAh Power Station — K 1,950.00</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Initial Deposit Rate</label>
+                  <div class="layby-pill-group">
+                    <button type="button" class="layby-rate-btn active" data-deposit="0.20" onclick="window.setLaybyDeposit(0.20)">20% (Low Deposit)</button>
+                    <button type="button" class="layby-rate-btn" data-deposit="0.30" onclick="window.setLaybyDeposit(0.30)">30% (Recommended)</button>
+                    <button type="button" class="layby-rate-btn" data-deposit="0.50" onclick="window.setLaybyDeposit(0.50)">50% (Fast Track)</button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Layby Duration</label>
+                  <div class="layby-pill-group">
+                    <button type="button" class="layby-duration-btn" data-months="1" onclick="window.setLaybyMonths(1)">1 Month</button>
+                    <button type="button" class="layby-duration-btn active" data-months="2" onclick="window.setLaybyMonths(2)">2 Months</button>
+                    <button type="button" class="layby-duration-btn" data-months="3" onclick="window.setLaybyMonths(3)">3 Months</button>
+                  </div>
+                </div>
+
+                <!-- Layby Result Breakdown Card -->
+                <div class="trade-result-card" style="border-left: 3px solid #25d366;">
+                  <div class="result-row">
+                    <span>Total Device Price:</span>
+                    <strong id="layby-total-price" style="color:var(--text-primary);">K 24,999.00</strong>
+                  </div>
+                  <div class="result-row highlight" style="color:#15803d;">
+                    <span>Deposit Due Today (Locks Device):</span>
+                    <span class="trade-credit-val" id="layby-deposit-val" style="color:#15803d;">K 5,000.00</span>
+                  </div>
+                  <div class="result-row">
+                    <span>Remaining Balance:</span>
+                    <span id="layby-balance-val">K 19,999.00</span>
+                  </div>
+                  <div class="result-row" style="font-weight:700; color:var(--text-primary); padding-top:4px;">
+                    <span>Installment Amount:</span>
+                    <span id="layby-installment-val" style="color: #15803d; font-weight: 800; font-size: 1.05rem;">K 9,999.50 / month</span>
+                  </div>
+                </div>
+
+                <button type="button" class="btn-primary-tech calc-submit-btn" id="book-layby-btn" onclick="window.bookLaybyWA()" style="background: linear-gradient(135deg, #25d366 0%, #15803d 100%);">
+                  <i class="fa-brands fa-whatsapp"></i> Reserve Device on Layby via WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MACMO SOLUTIONS: CORPORATE BULK PROCUREMENT FIRST, THEN CAMPUS PRIORITY -->
+    <section class="section container" id="business">
+      <div class="section-header">
+        <span class="section-pill">SOLUTIONS &amp; PERKS</span>
+        <h2 class="section-title">Corporate Procurement &amp; Campus Priority</h2>
+        <p class="section-desc">Specialized hardware supply for Zambian commercial institutions, enterprises, and UNILUS students &amp; faculty.</p>
+      </div>
+
+      <div class="solutions-dual-grid">
+        <!-- Card 1: Corporate Procurement Card (NOW FIRST) -->
+        <div class="solution-card corporate-card">
+          <div class="solution-icon-wrap" style="background: rgba(10, 112, 185, 0.12); color: #0a70b9;">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <span class="solution-tag" style="color: #0a70b9;">BULK PROCUREMENT &amp; B2B FLEET</span>
+          <h3>Corporate Hardware &amp; Backup Power</h3>
+          <p>
+            Equipping Zambian enterprises, offices, NGOs, and commercial institutions with high-performance business laptops, executive smartphones, and EcoFlow load-shedding backup power stations.
+          </p>
+          <ul class="solution-list">
+            <li><i class="fa-solid fa-circle-check"></i> Volume commercial discounts &amp; official quotations</li>
+            <li><i class="fa-solid fa-circle-check"></i> 12-Month hardware warranties on all corporate units</li>
+            <li><i class="fa-solid fa-circle-check"></i> Office blackout backup power supply &amp; consultation</li>
+          </ul>
+          <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics!%20I%20would%20like%20to%20request%20a%20corporate%20bulk%20procurement%20quote%20for%20devices/power." target="_blank" rel="noopener" class="btn-primary-tech" style="margin-top:auto; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+            <i class="fa-brands fa-whatsapp"></i> Request Corporate Quote
+          </a>
+        </div>
+
+        <!-- Card 2: Campus Perks Card (NOW SECOND) -->
+        <div class="solution-card campus-card">
+          <div class="solution-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span class="solution-tag" style="color: #10b981;">UNILUS SILVEREST CAMPUS</span>
+          <h3>Student Tech Care &amp; Express Drop-Off</h3>
+          <p>
+            Located directly opposite UNILUS Silverest Campus. We provide free express drop-off to student hostels, campus trade-ins, laptop diagnostics, and flexible student Layby schedules.
+          </p>
+          <ul class="solution-list">
+            <li><i class="fa-solid fa-circle-check"></i> Free same-day delivery right to UNILUS hostels</li>
+            <li><i class="fa-solid fa-circle-check"></i> Student laptops, tablets &amp; smartphone packages</li>
+            <li><i class="fa-solid fa-circle-check"></i> On-the-spot hardware testing at Shop #1 Silverest</li>
+          </ul>
+          <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics!%20I%20am%20a%20UNILUS%20student%20and%20need%20assistance%20with%20a%20device." target="_blank" rel="noopener" class="btn-secondary" style="margin-top:auto; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+            <i class="fa-brands fa-whatsapp"></i> Chat with Campus Rep
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CUSTOMER REVIEWS -->
+    <section class="section container" id="reviews">
+      <div class="section-header">
+        <span class="section-pill">CUSTOMER FEEDBACK</span>
+        <h2 class="section-title">Trusted Across Lusaka &amp; Silverest</h2>
+        <p class="section-desc">Feedback from professionals, gamers, and students across Zambia.</p>
+      </div>
+
+      <div class="reviews-grid grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Got the portable EcoFlow backup power station and laptops for our consultancy during load-shedding. It keeps our workstations and Wi-Fi running seamlessly. Very reliable service!"</p>
+          <div class="reviewer-meta">
+            <strong>Bwalya Tembo</strong>
+            <span>Business Consultant, Lusaka</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Traded in my iPhone 12 Pro Max for an iPhone 15 Pro Max at Shop #1 Silverest. The diagnostic was fast, valuation was fair, and I walked out upgraded in under 15 minutes!"</p>
+          <div class="reviewer-meta">
+            <strong>Chanda Mwila</strong>
+            <span>Silverest Campus Student</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Purchased the PS5 Slim Console with DualSense controllers. Sealed packaging, genuine warranty, and they delivered right to my apartment in Woodlands the same afternoon."</p>
+          <div class="reviewer-meta">
+            <strong>Patrick Banda</strong>
+            <span>Lusaka Customer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SHOWROOM & CONNECT HUB -->
+    <section class="section container" id="contact" style="padding-bottom: 40px;">
+      <div class="section-header">
+        <span class="section-pill">VISIT OR CHAT</span>
+        <h2 class="section-title">Shop #1, Silverest Complex, Lusaka</h2>
+        <p class="section-desc">Visit our showroom directly opposite UNILUS or message us on WhatsApp for immediate assistance.</p>
+      </div>
+
+      <div class="contact-box-grid grid">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>Physical Showroom</h3>
+          <p id="storeAddressDisplay">
+            <strong>Shop #1, Silverest Complex</strong><br>
+            Great East Road, Lusaka, Zambia<br>
+            <em>(Directly opposite UNILUS Silverest Campus)</em>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+          <h3>Opening Hours</h3>
+          <p id="storeHoursDisplay">
+            <strong>Mon &ndash; Sat:</strong> 8:30 AM &ndash; 6:30 PM<br>
+            <strong>Sunday:</strong> 10:00 AM &ndash; 4:00 PM<br>
+            <em>Walk-ins welcome daily.</em>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3>Hotlines &amp; Social</h3>
+          <p>
+            <strong>WhatsApp Hotline:</strong> <a href="https://wa.me/260972756767" id="contactWaPrimaryLink" target="_blank" rel="noopener">+260 972 756 767</a><br>
+            <strong>Secondary Line:</strong> <a href="tel:+260572408101" id="contactPhoneSecLink">+260 572 408 101</a><br>
+            <strong>Follow Us:</strong> <a href="https://www.tiktok.com/@macmo.electronics2" target="_blank" rel="noopener">TikTok</a> &bull; <a href="https://www.facebook.com/p/MacMo-Electronics-61581449006021/" target="_blank" rel="noopener">Facebook</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp Button (Desktop Only — Mobile uses Bottom App Bar) -->
+  <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics!%20I%20am%20browsing%20your%20website%20and%20would%20like%20to%20order." 
+     class="floating-whatsapp-btn hide-on-phone" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Chat directly on WhatsApp"
+     title="Instant WhatsApp Support">
+    <div class="floating-whatsapp-ping"></div>
+    <i class="fa-brands fa-whatsapp" style="font-size: 1.8rem;"></i>
+  </a>
+
+  <!-- Mobile Bottom App Bar -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Bottom App Bar">
+    <a href="#store" class="m-bar-item active">
+      <span class="m-bar-icon"><i class="fa-solid fa-store"></i></span>
+      <span>Store</span>
+    </a>
+    <a href="#trade-in" class="m-bar-item">
+      <span class="m-bar-icon"><i class="fa-solid fa-repeat"></i></span>
+      <span>Trade/Layby</span>
+    </a>
+    <a href="#business" class="m-bar-item">
+      <span class="m-bar-icon"><i class="fa-solid fa-briefcase"></i></span>
+      <span>Corp/Campus</span>
+    </a>
+    <button type="button" class="m-bar-item" id="m-bar-cart-btn" onclick="window.openCart()" style="background:none; border:none; cursor:pointer;">
+      <span class="m-bar-icon" style="position: relative;">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="action-badge" id="m-bar-cart-badge" style="display: none; top: -6px; right: -8px;">0</span>
+      </span>
+      <span>Bag</span>
+    </button>
+    <a href="https://wa.me/260972756767" class="m-bar-item" target="_blank" rel="noopener">
+      <span class="m-bar-icon" style="color: #25d366;"><i class="fa-brands fa-whatsapp"></i></span>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- Complete Footer -->
+  <footer class="site-footer">
+    <div class="footer-container container">
+      <!-- Brand Column -->
+      <div class="footer-col brand-col">
+        <a href="#hero" class="footer-logo-link" aria-label="MacMo Electronics Home">
+          <img src="images/macmo-logo-3d-trans.png" alt="MacMo Electronics Logo" class="footer-logo-img" />
+        </a>
+        <p class="footer-about">
+          Lusaka's premier electronics and gaming hub. Authentic smartphones, laptops, PlayStation consoles, and backup power stations with 12-month warranty and rapid Zambian delivery.
+        </p>
+        <div class="footer-social-row">
+          <a href="https://www.tiktok.com/@macmo.electronics2" target="_blank" rel="noopener" class="footer-social-btn tiktok" title="Follow MacMo on TikTok" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.facebook.com/p/MacMo-Electronics-61581449006021/" target="_blank" rel="noopener" class="footer-social-btn facebook" title="Visit MacMo on Facebook" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/260972756767" target="_blank" rel="noopener" class="footer-social-btn whatsapp" title="Chat with MacMo on WhatsApp" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Shop Categories</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#store" onclick="window.filterByCat('phones')"><i class="fa-solid fa-angle-right"></i> Smartphones &amp; iPhones</a></li>
+          <li><a href="#store" onclick="window.filterByCat('computers')"><i class="fa-solid fa-angle-right"></i> Laptops &amp; Workstations</a></li>
+          <li><a href="#store" onclick="window.filterByCat('gaming')"><i class="fa-solid fa-angle-right"></i> PlayStation &amp; Gaming</a></li>
+          <li><a href="#store" onclick="window.filterByCat('tablets')"><i class="fa-solid fa-angle-right"></i> iPads &amp; Tablets</a></li>
+          <li><a href="#store" onclick="window.filterByCat('audio')"><i class="fa-solid fa-angle-right"></i> AirPods &amp; JBL Audio</a></li>
+          <li><a href="#store" onclick="window.filterByCat('power')"><i class="fa-solid fa-angle-right"></i> Power &amp; Backup Stations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Services &amp; Policies</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#business"><i class="fa-solid fa-angle-right"></i> Corporate Bulk Procurement</a></li>
+          <li><a href="#business"><i class="fa-solid fa-angle-right"></i> UNILUS Campus Priority</a></li>
+          <li><a href="#trade-in" onclick="window.switchServiceTab('trade-in')"><i class="fa-solid fa-angle-right"></i> Device Trade-In / Swap</a></li>
+          <li><a href="#trade-in" onclick="window.switchServiceTab('layby')"><i class="fa-solid fa-angle-right"></i> 0% Interest Layby Plan</a></li>
+          <li><a href="privacy.html"><i class="fa-solid fa-angle-right"></i> Warranty &amp; Store Policies</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Showroom Location &amp; Hours</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Payment &amp; Delivery</h4>
+        <ul class="footer-badges-list">
+          <li class="footer-badge-item"><i class="fa-solid fa-mobile-screen"></i> Airtel Money &bull; MTN MoMo</li>
+          <li class="footer-badge-item"><i class="fa-solid fa-building-columns"></i> Bank Transfer (ZMW)</li>
+          <li class="footer-badge-item"><i class="fa-solid fa-money-bill-wave"></i> Cash on Delivery / Pickup</li>
+          <li class="footer-badge-item"><i class="fa-solid fa-truck-fast"></i> Lusaka Same-Day Express</li>
+          <li class="footer-badge-item"><i class="fa-solid fa-plane-departure"></i> Countrywide Courier (EMS)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner container">
+        <p>&copy; 2026 MacMo Electronics. All rights reserved. Shop #1, Silverest Complex, Great East Road, Lusaka.</p>
+        <div class="footer-badges">
+          <span class="trust-chip"><i class="fa-solid fa-shield-halved"></i> 100% Authentic Tech</span>
+          <span class="trust-chip"><i class="fa-solid fa-certificate"></i> 12-Month Warranty</span>
+          <a href="privacy.html" class="trust-chip" style="text-decoration:none;"><i class="fa-solid fa-file-shield"></i> Store Policies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 1. INTERACTIVE PRODUCT DETAIL & CONFIGURATION MODAL -->
+  <div class="modal-overlay" id="specsModal" aria-hidden="true" style="display: none;">
+    <div class="modal-card pdp-modal-card">
+      <button type="button" class="modal-close-btn pdp-close-btn" id="specsModalCloseBtn" aria-label="Close product view">&times;</button>
+
+      <div class="pdp-grid">
+        <!-- Left Column: Clean Framed Product Image & MacMo Trust Strip -->
+        <div class="pdp-visual-col">
+          <div class="pdp-image-frame">
+            <span class="pdp-Condition-badge" id="modalDeviceBadge">Brand New &bull; Sealed</span>
+            <img src="" id="modalDeviceImg" alt="Device Preview" class="pdp-main-img" />
+          </div>
+          <div class="pdp-visual-perks">
+            <span><i class="fa-solid fa-shield-halved"></i> 12-Month Warranty</span>
+            <span><i class="fa-solid fa-truck-fast"></i> Free UNILUS Drop</span>
+            <span><i class="fa-solid fa-box-archive"></i> 0% Interest Layby</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Configuration, Pricing & Basket Controls -->
+        <div class="pdp-details-col">
+          <div class="pdp-brand" id="modalDeviceBrand">Apple</div>
+          <h2 class="pdp-title" id="modalDeviceTitle">iPhone 15 Pro Max</h2>
+          <p class="pdp-desc" id="modalDeviceDesc">Forged in aerospace titanium. Powered by the A17 Pro chip with pro camera system.</p>
+
+          <!-- Storage / Capacity / Edition Selector -->
+          <div class="pdp-option-block" id="modalStorageBlock">
+            <div class="pdp-option-label">Storage / Option</div>
+            <div class="pdp-pills-row" id="modalStoragePills">
+              <!-- Populated dynamically by app.js -->
+            </div>
+          </div>
+
+          <!-- Colour Swatch Selector -->
+          <div class="pdp-option-block" id="modalColorBlock">
+            <div class="pdp-option-label">Colour &middot; <span id="modalSelectedColorName">Black Titanium</span></div>
+            <div class="pdp-color-swatches" id="modalColorSwatches">
+              <!-- Populated dynamically by app.js -->
+            </div>
+          </div>
+
+          <!-- Key Hardware Specs Pill -->
+          <div class="pdp-specs-line" id="modalDeviceSpecs">256GB &bull; Titanium &bull; Official Warranty</div>
+
+          <!-- Price & Availability Row -->
+          <div class="pdp-price-bar">
+            <div class="pdp-price-left">
+              <span class="pdp-price-lbl">Price</span>
+              <div class="pdp-price-val" id="modalDevicePrice">K 24,999.00</div>
+              <span class="pdp-layby-hint" id="modalLaybyHint"><i class="fa-solid fa-box-archive"></i> 0% Layby from K 5,000.00 deposit</span>
+            </div>
+            <div class="pdp-avail-right">
+              <span class="pdp-avail-status" id="modalDeviceStock">Available</span>
+              <span class="pdp-avail-sub">Lusaka same-day</span>
+              <span class="pdp-avail-sub">Free UNILUS drop &middot; 1&ndash;3 days nationwide</span>
+            </div>
+          </div>
+
+          <!-- Business / Bulk Inline Link -->
+          <div class="pdp-biz-inline">
+            Buying for an office, institution, or in bulk? <button type="button" class="pdp-biz-link" onclick="window.requestProductBusinessPrice()">Ask for a business price</button>
+          </div>
+
+          <!-- Row 1: Quantity Stepper + Add to Basket + Wishlist Heart -->
+          <div class="pdp-primary-actions">
+            <div class="pdp-qty-pill" aria-label="Quantity">
+              <button type="button" class="pdp-qty-btn" onclick="window.adjustModalQty(-1)" aria-label="Decrease quantity">&minus;</button>
+              <span class="pdp-qty-num" id="modalQtyValue">1</span>
+              <button type="button" class="pdp-qty-btn" onclick="window.adjustModalQty(1)" aria-label="Increase quantity">+</button>
+            </div>
+
+            <button type="button" class="pdp-add-basket-btn" id="modalAddToCartBtn">
+              Add to basket &middot; <span id="modalAddBtnPrice">K 24,999.00</span>
+            </button>
+
+            <button type="button" class="pdp-wish-btn" id="modalWishBtn" onclick="window.toggleModalWishlist()" aria-label="Save to Wishlist" title="Save to Wishlist">
+              <i class="fa-regular fa-heart" id="modalWishIcon"></i>
+            </button>
+          </div>
+
+          <!-- Row 2 & 3: Request Quote / Layby & Business Price -->
+          <div class="pdp-secondary-actions">
+            <button type="button" class="pdp-sec-outline-btn" onclick="window.requestProductQuote()">
+              Request quote / Reserve on 0% Layby
+            </button>
+            <button type="button" class="pdp-sec-outline-btn" onclick="window.requestProductBusinessPrice()">
+              Buying a few? Ask for a business price
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. UPGRADED BASKET SLIDE-OUT DRAWER -->
+  <aside class="cart-drawer basket-drawer" id="cart-drawer" aria-label="Your Basket">
+    <div class="cart-header basket-header">
+      <div class="cart-title-wrap">
+        <h3>Your basket</h3>
+        <span class="cart-items-count" id="drawer-item-count">0 items</span>
+      </div>
+      <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="Close Basket">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-body basket-body">
+      <div class="cart-items-list" id="cart-items-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+
+    <div class="cart-footer basket-footer">
+      <div class="basket-total-row">
+        <span class="basket-total-lbl">Total</span>
+        <span class="basket-total-val" id="cart-subtotal">K 0.00</span>
+      </div>
+
+      <button type="button" class="basket-checkout-btn" id="checkout-wa-btn">
+        Checkout
+      </button>
+
+      <button type="button" class="basket-biz-btn" onclick="window.requestBasketBusinessQuote()">
+        Ask for a business price
+      </button>
+
+      <p class="basket-reassurance">Delivery confirmed before dispatch &middot; Official receipt issued</p>
+    </div>
+  </aside>
+  <div class="drawer-overlay" id="cart-drawer-overlay"></div>
+
+  <!-- 3. DEDICATED INTERACTIVE CHECKOUT VIEW ("ALMOST DONE") -->
+  <div class="modal-overlay checkout-overlay" id="checkoutModal" aria-hidden="true" style="display: none;">
+    <div class="checkout-modal-container">
+      <!-- Top Bar -->
+      <div class="checkout-top-header">
+        <div>
+          <h2 class="checkout-main-title">Almost done</h2>
+          <p class="checkout-main-sub">Nothing is charged on this page. We confirm the amount and delivery with you first.</p>
+        </div>
+        <div class="checkout-top-actions">
+          <button type="button" class="checkout-edit-basket-link" onclick="window.backToBasketFromCheckout()">Edit basket</button>
+          <button type="button" class="checkout-close-x" onclick="window.closeCheckoutModal()" aria-label="Close Checkout">&times;</button>
+        </div>
+      </div>
+
+      <!-- 2-Column Checkout Body -->
+      <form class="checkout-grid" id="checkoutOrderForm" onsubmit="window.submitFinalCheckout(event)">
+        <!-- Left Column: Who it's for & Where it goes -->
+        <div class="checkout-left-col">
+          <div class="checkout-section-block">
+            <h3 class="checkout-sec-heading">Who it's for</h3>
+            <div class="checkout-input-row-2">
+              <input type="text" id="chkFullName" class="checkout-field" placeholder="Full name *" required autocomplete="name" />
+              <input type="tel" id="chkPhone" class="checkout-field" placeholder="Phone / WhatsApp *" required autocomplete="tel" />
+            </div>
+            <div class="checkout-input-row-1">
+              <input type="text" id="chkEmail" class="checkout-field" placeholder="Email or Company name (for your official receipt)" autocomplete="email" />
+            </div>
+            <p class="checkout-helper-note">
+              <i class="fa-solid fa-bolt" style="color:#0a70b9;"></i> Ordered before? Your details are saved on this device so this fills itself in next time.
+            </p>
+          </div>
+
+          <div class="checkout-section-block">
+            <h3 class="checkout-sec-heading">Where it goes</h3>
+            <div class="checkout-delivery-cards">
+              <button type="button" class="chk-delivery-card active" id="chkMethodDeliver" onclick="window.setCheckoutDeliveryMethod('deliver')">
+                <div class="chk-deliv-title">Deliver to me</div>
+                <div class="chk-deliv-sub">Same-day in Lusaka &middot; Free UNILUS drop-off &middot; 1 to 3 days nationwide.</div>
+              </button>
+
+              <button type="button" class="chk-delivery-card" id="chkMethodCollect" onclick="window.setCheckoutDeliveryMethod('collect')">
+                <div class="chk-deliv-title">Collect in store</div>
+                <div class="chk-deliv-sub">Shop #1, Silverest Complex &middot; Great East Rd (Opp. UNILUS)</div>
+              </button>
+            </div>
+
+            <div id="chkAddressWrapper" class="checkout-address-box">
+              <input type="text" id="chkAddress" class="checkout-field" placeholder="Area, street, UNILUS hostel block, or directions you'd give a rider *" />
+              <div class="checkout-city-line">
+                <span id="chkCityLabel">Lusaka</span> &middot;
+                <button type="button" class="chk-city-toggle-btn" onclick="window.toggleCheckoutOutOfLusaka()" id="chkCityToggleBtn">not Lusaka?</button>
+              </div>
+              <div id="chkTownWrapper" style="display: none; margin-top: 10px;">
+                <input type="text" id="chkTownInput" class="checkout-field" placeholder="Enter your town/city (e.g. Kitwe, Ndola, Livingstone, Solwezi)" />
+              </div>
+              <p class="checkout-dispatch-note">Same-day delivery in Lusaka &amp; UNILUS when you order before the afternoon run.</p>
+            </div>
+          </div>
+
+          <!-- MacMo Exclusive: Preferred Payment Option -->
+          <div class="checkout-section-block" style="border-bottom: none; padding-bottom: 0;">
+            <h3 class="checkout-sec-heading">Preferred payment method</h3>
+            <div class="chk-payment-pills">
+              <button type="button" class="chk-pay-pill active" data-pay="Mobile Money (Airtel / MTN)" onclick="window.setCheckoutPayment(this)">Airtel / MTN MoMo</button>
+              <button type="button" class="chk-pay-pill" data-pay="Cash on Delivery / In-Store" onclick="window.setCheckoutPayment(this)">Cash on Delivery / Pickup</button>
+              <button type="button" class="chk-pay-pill" data-pay="Bank Transfer (ZMW)" onclick="window.setCheckoutPayment(this)">Bank Transfer</button>
+              <button type="button" class="chk-pay-pill" data-pay="0% Interest Layby (20% Deposit)" onclick="window.setCheckoutPayment(this)">0% Layby Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Basket Summary & Place Order -->
+        <div class="checkout-right-col">
+          <div class="checkout-summary-head">
+            <span>Your basket</span>
+            <span id="chkSummaryCount">1 item</span>
+          </div>
+
+          <div class="checkout-summary-items" id="chkSummaryItems">
+            <!-- Populated dynamically by app.js -->
+          </div>
+
+          <div class="checkout-summary-totals">
+            <div class="chk-tot-row">
+              <span>Subtotal</span>
+              <strong id="chkSubtotalVal">K 0.00</strong>
+            </div>
+            <div class="chk-tot-row chk-grand-row">
+              <span>Total to pay</span>
+              <span class="chk-grand-val" id="chkGrandTotalVal">K 0.00</span>
+            </div>
+            <div class="chk-tot-row" id="chkLaybyDepositRow" style="display: none; color: #15803d; font-weight: 700;">
+              <span>20% Layby Deposit Due Today:</span>
+              <span id="chkLaybyDepositVal">K 0.00</span>
+            </div>
+          </div>
+
+          <p class="chk-pre-submit-note">Delivery confirmed with you before dispatch. Official receipt issued.</p>
+
+          <button type="submit" class="chk-place-order-btn" id="chkPlaceOrderBtn">
+            Place order &middot; <span id="chkPlaceOrderBtnAmt">K 0.00</span>
+          </button>
+
+          <ul class="chk-trust-list">
+            <li><i class="fa-solid fa-check"></i> 12-Month Official MacMo Hardware Warranty</li>
+            <li><i class="fa-solid fa-check"></i> Nothing charged until we confirm with you</li>
+            <li><i class="fa-solid fa-check"></i> Official receipt kept; fast support &amp; trade-in upgrades</li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Wishlist Slide-Out Drawer -->
+  <aside class="wishlist-drawer" id="wishlist-drawer" aria-label="Saved Wishlist Devices">
+    <div class="cart-header">
+      <div class="wishlist-title-wrap">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Saved Devices</h3>
+        <span class="cart-items-count" id="wishlist-item-count">0 items</span>
+      </div>
+      <button type="button" class="cart-close-btn" id="wishlist-close-btn" onclick="window.closeWishlistModal()" aria-label="Close Wishlist">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-body">
+      <div class="cart-items-list" id="wishlist-items-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-delivery-note">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>12-Month Official Warranty on all saved hardware</span>
+      </div>
+
+      <div class="cart-subtotal-row">
+        <span>Wishlist Value:</span>
+        <span class="cart-subtotal" id="wishlist-subtotal">K 0.00</span>
+      </div>
+
+      <button type="button" class="btn-primary-tech checkout-btn" id="wishlist-wa-btn" onclick="window.inquireWishlistWA()">
+        <i class="fa-brands fa-whatsapp"></i> Inquire Wishlist on WhatsApp
+      </button>
+    </div>
+  </aside>
+  <div class="drawer-overlay" id="wishlist-drawer-overlay" onclick="window.closeWishlistModal()"></div>
+
+  <!-- Live Search Modal -->
+  <div class="modal-overlay" id="search-modal-overlay" style="display: none;">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <i class="fa-solid fa-magnifying-glass search-modal-icon"></i>
+        <input type="text" id="modal-search-input" placeholder="Search devices by name, brand, or feature..." autocomplete="off" />
+        <button type="button" class="modal-close-btn" id="search-close-btn" aria-label="Close search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results">
+        <!-- Live search matches -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js?v=9.0"></script>
+  <script src="site-config.js?v=9.0"></script>
+  <script src="products-data.js?v=9.0"></script>
+  <script src="app.js?v=10.0"></script>
+
+  <!-- Service Worker Registration for PWA & Offline Support -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration note:', err));
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "MacMo Electronics Lusaka",
+  "short_name": "MacMo Tech",
+  "description": "Lusaka's Premier Electronics & Gaming Hub opposite UNILUS Silverest Campus. Smartphones, laptops, PlayStation consoles, iPads, and load-shedding backup power.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080c",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/macmo-emblem-3d.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/macmo-logo-3d.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "technology", "productivity"]
+}
