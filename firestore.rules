@@ -1,0 +1,67 @@
+rules_version = '2';
+
+// MACMO ELECTRONICS — PRODUCTION FIRESTORE SECURITY RULES
+// Deploy in Firebase Console -> Firestore Database -> Rules
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: Only signed-in MacMo Administrators can modify store data or read customer logs.
+    // IMPORTANT: In Firebase Console -> Authentication -> Settings -> User actions,
+    // UNTICK "Enable create (sign-up)" so nobody can self-register an account with the public web config.
+    // (Optional, strongest): replace the line below with an allowlist, e.g.
+    //   return request.auth != null && request.auth.token.email in ['owner@example.com'];
+    function isAdmin() {
+      return request.auth != null && request.auth.token.email != null;
+    }
+
+    // 1. Live Product Catalog: Strictly Read-Only for Public Visitors, Admin-Only Write
+    match /products/{productId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // 2. Store & AI Concierge Settings: Strictly Read-Only for Public Visitors, Admin-Only Write
+    match /settings/{docId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // 3. Deleted Products Metadata: Strictly Read-Only for Public Visitors, Admin-Only Write
+    match /meta/{docId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // 4. Customer Orders & Proforma Quotes Log:
+    // Customers can CREATE a validated order/quote record, but ONLY Admins can READ, UPDATE, or DELETE orders!
+    match /orders/{orderRef} {
+      allow create: if request.resource.data.keys().hasAll(['ref', 'customerName', 'total', 'items'])
+                    && request.resource.data.ref is string
+                    && request.resource.data.ref.size() <= 40
+                    && request.resource.data.customerName is string
+                    && request.resource.data.customerName.size() <= 200
+                    && request.resource.data.total is number
+                    && request.resource.data.total >= 0
+                    && request.resource.data.total <= 5000000
+                    && request.resource.data.items is list
+                    && request.resource.data.items.size() >= 1
+                    && request.resource.data.items.size() <= 25;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // 5. AI Concierge Conversation & Unanswered Questions Log:
+    // Storefront can CREATE log entries, but ONLY Admins can READ or DELETE them!
+    match /ai_logs/{logId} {
+      allow create: if request.resource.data.keys().hasAll(['q', 'intent', 'ts'])
+                    && request.resource.data.q is string
+                    && request.resource.data.q.size() <= 400;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Default deny for any other collection
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+

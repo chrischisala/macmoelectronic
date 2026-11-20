@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warranty, Returns, Layby &amp; Store Policies | MacMo Electronics Lusaka</title>
+  <meta name="description" content="Official 12-Month Hardware Warranty, 0% Interest Layby Plan, Trade-In Valuation, Delivery &amp; Privacy Policies for MacMo Electronics Lusaka (Town Center &amp; Silverest)." />
+
+  <link rel="icon" type="image/png" href="images/macmo-emblem-official.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css?v=14.0" />
+
+  <style>
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      padding-bottom: 60px;
+      overflow-x: hidden;
+    }
+
+    /* TOP BAR */
+    .policy-navbar {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 12px 20px;
+    }
+
+    .policy-nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .nav-brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .nav-emblem {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-brand-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--brand);
+      line-height: 1.2;
+    }
+
+    .nav-brand-sub {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-nav-wa {
+      background: #25d366;
+      color: #ffffff;
+      padding: 7px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-nav-wa:hover {
+      background: #1ebd56;
+      transform: translateY(-1px);
+    }
+
+    .btn-nav-home {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      padding: 7px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* CONTAINER & HERO */
+    .policy-container {
+      max-width: 960px;
+      margin: 30px auto 0;
+      padding: 0 16px;
+    }
+
+    .policy-hero {
+      text-align: center;
+      padding: 24px 16px 36px;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 24px;
+    }
+
+    .policy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(37, 99, 235, 0.1);
+      border: 1px solid rgba(37, 99, 235, 0.25);
+      color: var(--brand);
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .policy-hero h1 {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .policy-hero p {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* QUICK JUMP PILLS */
+    .quick-jump-bar {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 14px;
+      margin-bottom: 28px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .quick-jump-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .jump-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    .jump-pill:hover {
+      background: var(--brand);
+      color: #ffffff;
+      border-color: var(--brand);
+      transform: translateY(-1px);
+    }
+
+    /* POLICY CARDS */
+    .policy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 26px 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+      scroll-margin-top: 80px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .policy-card:hover {
+      border-color: rgba(37, 99, 235, 0.3);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .policy-card h2 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--brand);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .policy-card p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    .policy-card ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    .policy-card li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .policy-callout {
+      background: rgba(37, 99, 235, 0.05);
+      border-left: 4px solid var(--brand);
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-top: 14px;
+      font-size: 0.85rem;
+      color: var(--text-primary);
+    }
+
+    .policy-callout.warning {
+      background: rgba(245, 158, 11, 0.08);
+      border-left-color: #f59e0b;
+    }
+
+    .policy-callout.success {
+      background: rgba(16, 185, 129, 0.08);
+      border-left-color: #10b981;
+    }
+
+    /* FOOTER CALLOUT */
+    .policy-footer-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.06) 0%, rgba(37, 99, 235, 0.12) 100%);
+      border: 1px solid rgba(37, 99, 235, 0.25);
+      border-radius: var(--radius-md);
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 640px) {
+      .policy-card {
+        padding: 20px 16px;
+      }
+
+      .nav-brand-sub {
+        display: none;
+      }
+
+      .policy-hero h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <header class="policy-navbar">
+    <div class="policy-nav-inner">
+      <a href="/" class="nav-brand-group">
+        <img src="images/macmo-emblem-official.png" alt="MacMo" class="nav-emblem" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">MacMo Electronics</span>
+          <span class="nav-brand-sub">Innovate. Elevate. Connect. &bull; Town Center &amp; Silverest</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Store!%20I%20have%20a%20question%20regarding%20store%20policies."
+          target="_blank" class="btn-nav-wa">
+          <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp Desk</span>
+        </a>
+        <a href="/" class="btn-nav-home">
+          <i class="fa-solid fa-store"></i> <span>Store Catalog</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="policy-container">
+    <!-- HERO HEADER -->
+    <div class="policy-hero">
+      <div class="policy-badge"><i class="fa-solid fa-shield-check"></i> Official Customer Charter &amp; Guarantees
+      </div>
+      <h1>Warranty, Returns &amp; Store Policies</h1>
+      <p>
+        Clear, transparent rules governing hardware warranties, 7-day replacements, 0% Layby price locks, trade-in
+        inspections, countrywide courier shipping, and corporate procurement at MacMo Electronics Lusaka (Town Center
+        &amp; Silverest).
+      </p>
+    </div>
+
+    <!-- QUICK JUMP PILLS -->
+    <div class="quick-jump-bar">
+      <a href="#warranty" class="jump-pill"><i class="fa-solid fa-shield-halved"></i> 12-Mo Warranty</a>
+      <a href="#returns" class="jump-pill"><i class="fa-solid fa-arrow-rotate-left"></i> 7-Day Returns &amp; Faults</a>
+      <a href="#layby" class="jump-pill"><i class="fa-solid fa-clock-rotate-left"></i> 0% Layby Agreement</a>
+      <a href="#trade-in" class="jump-pill"><i class="fa-solid fa-repeat"></i> Trade-In &amp; Clean IMEI</a>
+      <a href="#payments" class="jump-pill"><i class="fa-solid fa-credit-card"></i> Payments &amp; MoMo Anti-Fraud</a>
+      <a href="#delivery" class="jump-pill"><i class="fa-solid fa-truck-fast"></i> UNILUS &amp; Lusaka Delivery</a>
+      <a href="#courier" class="jump-pill"><i class="fa-solid fa-box-open"></i> Countrywide Courier</a>
+      <a href="#corporate" class="jump-pill"><i class="fa-solid fa-file-invoice"></i> Corporate &amp; Proformas</a>
+      <a href="#privacy" class="jump-pill"><i class="fa-solid fa-lock"></i> Privacy &amp; Data Security</a>
+    </div>
+
+    <!-- 1. WARRANTY -->
+    <section class="policy-card" id="warranty">
+      <h2><i class="fa-solid fa-shield-halved"></i> 1. 12-Month Official Warranty &amp; Coverage</h2>
+      <p>
+        Every brand-new hardware device purchased from MacMo Electronics includes an official <strong>12-Month
+          comprehensive manufacturer hardware warranty</strong>. Certified pre-owned Grade A+ devices include a
+        <strong>90-day store hardware warranty</strong>.
+      </p>
+      <ul>
+        <li><strong>What is Covered:</strong> Motherboard electronic defects, spontaneous component failure, factory
+          display panel faults (lines or touch failure not resulting from drops), camera sensor defects, and internal
+          charging circuitry.</li>
+        <li><strong>What is Not Covered:</strong> Accidental physical impact (cracked screens, bent chassis, dented
+          corners), liquid submersion beyond official ingress specs, power surge damage from uncertified adapters,
+          unauthorized 3rd-party repairs, or jailbroken/rooted firmware.</li>
+        <li><strong>Claim Procedure:</strong> Present your digital or printed receipt at either of our Lusaka branches:
+          <strong>Town Center</strong> (Voltic Building, Kalundwe Rd &amp; Cha-Cha Rd Corner) or
+          <strong>Silverest</strong> (Asado Complex Shop #1, Opposite UNILUS Great East Road). Customers outside Lusaka
+          (Copperbelt, Livingstone, Solwezi) may dispatch their device to our Lusaka workshop via EMS Courier with
+          real-time tracking.</li>
+      </ul>
+      <div class="policy-callout success">
+        <i class="fa-solid fa-circle-check"></i> <strong>Turnaround Promise:</strong> Warranty diagnostic assessments
+        are completed within 48 to 72 hours of store receipt.
+      </div>
+    </section>
+
+    <!-- 2. 7-DAY RETURNS & REPLACEMENTS -->
+    <section class="policy-card" id="returns">
+      <h2><i class="fa-solid fa-arrow-rotate-left"></i> 2. 7-Day Immediate Replacement &amp; Returns Policy</h2>
+      <p>
+        We hold every unit to rigorous Quality Control. If an item exhibits a technical or factory hardware fault right
+        out of the box, we protect you with an immediate 7-day exchange window:
+      </p>
+      <ul>
+        <li><strong>Dead-on-Arrival (DOA) / Out-of-Box Fault:</strong> Devices exhibiting manufacturer faults within
+          <strong>7 days of purchase</strong> qualify for an immediate 1-to-1 brand-new replacement or 100% store
+          credit.</li>
+        <li><strong>Change of Mind:</strong> Sealed brand-new devices in intact factory plastic wrap may be returned
+          within <strong>48 hours</strong> for an exchange or store voucher. Once unsealed or activated under an Apple
+          ID / Google account, change-of-mind returns are not accepted.</li>
+        <li><strong>Return Requirements:</strong> The unit must be accompanied by its original retail box, supplied
+          charging accessories, and proof of purchase (MacMo receipt or proforma reference).</li>
+      </ul>
+      <div class="policy-callout warning">
+        <i class="fa-solid fa-triangle-exclamation"></i> <strong>Inspection Check:</strong> Serial numbers and IMEIs on
+        returned hardware must match the recorded store invoice.
+      </div>
+    </section>
+
+    <!-- 3. 0% LAYBY AGREEMENT -->
+    <section class="policy-card" id="layby">
+      <h2><i class="fa-solid fa-clock-rotate-left"></i> 3. 0% Interest Layby (Layaway) Agreement &amp; Terms</h2>
+      <p>
+        MacMo’s 0% Layby program allows students, professionals, and families to secure premium tech with zero debt and
+        zero interest:
+      </p>
+      <ul>
+        <li><strong>Deposit Requirements:</strong> Pay an initial deposit of <strong>20%, 30%, or 50%</strong> to
+          immediately reserve the device.</li>
+        <li><strong>Price Lock Guarantee:</strong> The Kwacha (ZMW) price agreed upon at the time of your deposit is
+          <strong>100% locked</strong>. Even if market prices or USD exchange rates rise, your price will never
+          increase.</li>
+        <li><strong>Payoff Tenure:</strong> Pay off the balance at your own pace over <strong>1 to 3 calendar
+            months</strong> via Airtel Money, MTN MoMo, bank transfer, or cash.</li>
+        <li><strong>Vault Storage:</strong> Your specific device is cataloged, labelled, and held securely in our Town
+          Center or Silverest vault until completion.</li>
+        <li><strong>Grace Period &amp; Cancellations:</strong> A 14-day grace period is granted upon notifying our
+          WhatsApp team. If a customer chooses to cancel a layby plan, all accumulated payments are converted into a
+          <strong>100% Store Credit Voucher</strong> (valid for 12 months for any tech purchase), or refunded minus a
+          standard 10% administrative restocking fee.</li>
+      </ul>
+      <div class="policy-callout success">
+        <i class="fa-solid fa-gift"></i> <strong>Zero Hidden Fees:</strong> No interest, no monthly penalties, and zero
+        administrative surcharges.
+      </div>
+    </section>
+
+    <!-- 4. TRADE-IN & ANTI-THEFT -->
+    <section class="policy-card" id="trade-in">
+      <h2><i class="fa-solid fa-repeat"></i> 4. Device Trade-In, Swap &amp; Anti-Theft Guidelines</h2>
+      <p>
+        Upgrade your smartphone, laptop, or PlayStation console by trading in your existing tech:
+      </p>
+      <ul>
+        <li><strong>Condition Valuation Tiers:</strong>
+          <ul>
+            <li><strong>Flawless (100% Value):</strong> Zero scratches, original display, battery health 85%+, all
+              sensors functional (FaceID/Fingerprint), iCloud/Google account removed.</li>
+            <li><strong>Good (85% Value):</strong> Microscopic wear from normal case usage, flawless display and camera,
+              original factory components.</li>
+            <li><strong>Fair (65% Value):</strong> Cosmetic frame scuffs, clean structural glass, 100% functional
+              motherboard.</li>
+          </ul>
+        </li>
+        <li><strong>Strict Anti-Theft / Clean Ownership:</strong> MacMo strictly enforces clean device verification. All
+          trade-in serial numbers and IMEIs are cross-referenced. Stolen, blacklisted, or MDM-supervised hardware is
+          strictly rejected and reported.</li>
+        <li><strong>Customer Data &amp; Certified Wipe:</strong> Customers must back up personal photos and sign out of
+          Apple ID / Google accounts before handover. MacMo performs a secondary certified cryptographic data wipe on
+          every accepted unit.</li>
+      </ul>
+    </section>
+
+    <!-- 5. PAYMENTS & ANTI-FRAUD -->
+    <section class="policy-card" id="payments">
+      <h2><i class="fa-solid fa-credit-card"></i> 5. Payment Methods, MoMo Verification &amp; Anti-Fraud</h2>
+      <p>
+        We support fast, safe payments through Zambia's leading financial rails:
+      </p>
+      <ul>
+        <li><strong>Accepted Payment Methods:</strong> Airtel Money Merchant, MTN MoMo, Absa Bank ZMW electronic funds
+          transfer (EFT), and Cash (in-store or on delivery).</li>
+        <li><strong>Merchant Verification:</strong> To protect both customers and the store against SMS spoofing scams,
+          goods are dispatched only once funds reflect in MacMo’s corporate merchant terminal or bank account.</li>
+        <li><strong>Cash on Delivery (COD) Limits:</strong> Available within the greater Lusaka metropolitan area for
+          verified phone orders up to <strong>K 10,000</strong>. Orders exceeding K 10,000 require advance MoMo/bank
+          settlement or in-store collection for driver safety.</li>
+        <li><strong>Zero Transaction Surcharges:</strong> Prices displayed on the website are final—no hidden card or
+          checkout fees.</li>
+      </ul>
+    </section>
+
+    <!-- 6. LUSAKA DELIVERY & CAMPUS PERKS -->
+    <section class="policy-card" id="delivery">
+      <h2><i class="fa-solid fa-truck-fast"></i> 6. Lusaka Express Delivery &amp; Free UNILUS Campus Drop-Off</h2>
+      <p>
+        Fast, direct delivery straight to your doorstep across Lusaka:
+      </p>
+      <ul>
+        <li><strong>UNILUS Silverest Campus Drop-Off:</strong> <strong>100% FREE same-day delivery</strong> directly to
+          University of Lusaka Silverest Campus hostels, library, and faculty administrative blocks from our Asado
+          Complex Shop #1 branch.</li>
+        <li><strong>Greater Lusaka Metropolitan:</strong> Express motorbike and vehicle dispatch from our Town Center
+          (Voltic Building) &amp; Silverest hubs servicing Avondale, Chelstone, Meanwood, Woodlands, Kabulonga, Roma,
+          Rhodes Park, and Lusaka CBD within 1 to 3 hours.</li>
+        <li><strong>Tamper-Evident Packaging:</strong> Every order is sealed in tamper-evident security packaging with
+          serial-number verification upon handover.</li>
+      </ul>
+    </section>
+
+    <!-- 7. COUNTRYWIDE SHIPPING -->
+    <section class="policy-card" id="courier">
+      <h2><i class="fa-solid fa-box-open"></i> 7. Countrywide Provincial Courier Dispatch</h2>
+      <p>
+        Serving clients across all provinces in Zambia via trusted courier partners:
+      </p>
+      <ul>
+        <li><strong>Destinations Covered:</strong> Kitwe, Ndola, Chingola, Mufulira, Solwezi, Livingstone, Kabwe,
+          Chipata, Kasama, Mansa, and Choma.</li>
+        <li><strong>Courier Partners:</strong> Dispatched via <strong>EMS (Zambia Postal Services)</strong> or
+          <strong>Power Tools / BM Courier</strong>.</li>
+        <li><strong>Same-Day Dispatch Cut-Off:</strong> Orders confirmed before <strong>14:00 (Mon – Sat)</strong> are
+          handed to couriers on the same day.</li>
+        <li><strong>Live WhatsApp Tracking:</strong> Waybill numbers, consignment notes, and photo receipts are sent
+          directly to the customer’s WhatsApp for end-to-end peace of mind.</li>
+        <li><strong>Depot Collection Check:</strong> Customers are advised to inspect the sealed exterior packaging at
+          the courier collection counter before signing the collection manifest.</li>
+      </ul>
+    </section>
+
+    <!-- 8. CORPORATE & PROFORMAS -->
+    <section class="policy-card" id="corporate">
+      <h2><i class="fa-solid fa-file-invoice"></i> 8. B2B Corporate Procurement &amp; Proforma Quotations</h2>
+      <p>
+        MacMo Electronics is an authorized vendor for schools, universities, NGOs, mines, and corporate entities in
+        Zambia:
+      </p>
+      <ul>
+        <li><strong>Official PDF Proforma Quotes:</strong> Generated instantly through our online checkout or sales
+          desk, complete with corporate banking details, ZMW totals, and formal terms.</li>
+        <li><strong>14-Day Price Validity:</strong> All issued official proforma quotes remain legally valid for
+          <strong>14 calendar days</strong> from the date of issue.</li>
+        <li><strong>Audit Documentation:</strong> We provide formal Tax Invoices, serial-number itemized Delivery Notes,
+          and signed Warranty Certificates for company asset audits.</li>
+        <li><strong>Volume Fulfillment:</strong> Immediate dispatch for in-stock equipment; specialized institutional
+          orders fulfilled within 3 to 5 business days.</li>
+      </ul>
+    </section>
+
+    <!-- 9. PRIVACY & DATA SECURITY -->
+    <section class="policy-card" id="privacy">
+      <h2><i class="fa-solid fa-lock"></i> 9. Customer Privacy, Data Security &amp; Communications</h2>
+      <p>
+        MacMo Electronics treats your personal and transaction data with highest confidentiality:
+      </p>
+      <ul>
+        <li><strong>Data Collection Scope:</strong> Information collected during checkout (name, WhatsApp number,
+          delivery address) is used strictly to fulfill orders, issue warranty certificates, and deliver service
+          notifications.</li>
+        <li><strong>Zero Data Selling:</strong> We never sell, lease, or share your contact details with 3rd-party
+          advertisers or marketing agencies.</li>
+        <li><strong>Secure Device Servicing:</strong> Customer hardware brought in for diagnosis or setup remains under
+          strict CCTV-monitored lab custody.</li>
+      </ul>
+    </section>
+
+    <!-- FOOTER CARD -->
+    <div class="policy-footer-card">
+      <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 8px;">Visit Our Showrooms or Chat
+        With Us</h3>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.65;">
+        📍 <strong>Town Center Branch:</strong> Kalundwe Road, Cha-Cha Rd Corner, Voltic Building, Lusaka &bull;
+        <strong>Mon – Sun: 07:30 – 18:30</strong><br>
+        📍 <strong>Silverest Branch:</strong> Asado Complex Shop #1, Opposite UNILUS Silverest Campus, Great East Road
+        &bull; <strong>Mon – Sat: 09:00 – 18:00</strong>
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://wa.me/260972756767?text=Hello%20MacMo!%20I%20have%20a%20question%20about%20your%20policies."
+          target="_blank" class="btn-nav-wa" style="padding: 10px 20px; font-size: 0.9rem;">
+          <i class="fa-brands fa-whatsapp"></i> Chat with Store Desk
+        </a>
+        <a href="/" class="btn-nav-home" style="padding: 10px 20px; font-size: 0.9rem;">
+          <i class="fa-solid fa-store"></i> Explore Live Catalog
+        </a>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "MacMo Electronics — Innovate. Elevate. Connect.",
+  "short_name": "MacMo Tech",
+  "description": "Innovate. Elevate. Connect. — Lusaka's Premier Electronics & Gaming Hub at Town Center (Voltic Building, Kalundwe & Cha-Cha Rd) and Silverest (Asado Complex Shop #1, opposite UNILUS).",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0a70b9",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/macmo-emblem-official.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/macmo-logo-3d.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "shopping",
+    "technology",
+    "productivity"
+  ]
+}

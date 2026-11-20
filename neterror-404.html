@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>404 Not Found</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #202124;
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .neterror-wrap {
+      max-width: 600px;
+      margin: 14vh auto 0;
+      padding: 0 24px;
+    }
+    .neterror-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 24px;
+    }
+    .neterror-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #202124;
+      margin: 0 0 14px;
+      line-height: 1.25;
+      word-break: break-word;
+    }
+    .neterror-desc {
+      font-size: 0.9rem;
+      color: #5f6368;
+      margin: 0 0 16px;
+      line-height: 1.55;
+    }
+    .neterror-desc strong {
+      color: #5f6368;
+      font-weight: 700;
+      word-break: break-all;
+    }
+    .neterror-code {
+      font-size: 0.75rem;
+      color: #5f6368;
+      letter-spacing: 0.02em;
+      margin: 0 0 36px;
+      text-transform: uppercase;
+    }
+    .neterror-btn {
+      background: #1a73e8;
+      color: #ffffff;
+      border: none;
+      border-radius: 999px;
+      padding: 8px 24px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.15s ease;
+    }
+    .neterror-btn:hover {
+      background: #1557b0;
+    }
+  </style>
+</head>
+<body>
+  <div class="neterror-wrap">
+    <!-- Chromium Sad Document Icon -->
+    <svg class="neterror-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M10 6H30L38 14V42H10V6Z" stroke="#5f6368" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M29 6V15H38" stroke="#5f6368" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="16" y="22" width="3.2" height="3.2" fill="#5f6368"/>
+      <rect x="28.8" y="22" width="3.2" height="3.2" fill="#5f6368"/>
+      <path d="M17 34C19.2 31.5 28.8 31.5 31 34" stroke="#5f6368" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <h1 class="neterror-title">This <span id="errHost">website</span> page can’t be found</h1>
+    <p class="neterror-desc">No webpage was found for the web address: <strong id="errUrl"></strong></p>
+    <div class="neterror-code">HTTP ERROR 404</div>
+    <button type="button" class="neterror-btn" onclick="window.location.reload()">Reload</button>
+  </div>
+  <script>
+    (function () {
+      var host = window.location.hostname || 'macmoelectronics.netlify.app';
+      var href = window.location.href;
+      document.title = host + ' — 404';
+      var hEl = document.getElementById('errHost');
+      var uEl = document.getElementById('errUrl');
+      if (hEl) hEl.textContent = host;
+      if (uEl) uEl.textContent = href;
+    })();
+  </script>
+</body>
+</html>
+

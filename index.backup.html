@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>MacMo Electronics | Phones, Gaming & Tech Store Lusaka (Opp. UNILUS)</title>
+  <meta name="description" content="MacMo Electronics — Lusaka's premier technology store at Shop #1 Silverest Complex (opposite UNILUS). Official iPhones, PlayStation consoles, MacBooks, iPads, and load-shedding backup power.">
+  <meta name="keywords" content="MacMo Electronics, electronics Lusaka, phones Lusaka, iPhones Zambia, PS5 Lusaka, UNILUS electronics, laptops Zambia, trade in phone Lusaka, load shedding inverters Lusaka">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="MacMo Electronics — Technology Starts Here">
+  <meta property="og:description" content="Shop iPhones, PlayStation 5, MacBooks, iPads, and accessories at Shop #1 Silverest Complex, Lusaka (Opposite UNILUS). Fast WhatsApp delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/macmo-logo-3d.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/macmo-emblem-3d.png">
+
+  <!-- Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6.5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=6.0">
+</head>
+<body>
+
+  <!-- 1. TOP ANNOUNCEMENT STRIP -->
+  <aside class="top-strip" aria-label="Announcement">
+    <div class="top-strip-inner container">
+      <div class="top-strip-left">
+        <span><i class="fa-solid fa-truck-fast"></i> Same-day Lusaka delivery &bull; Free campus drop-off to UNILUS</span>
+        <span class="top-strip-divider">|</span>
+        <span><i class="fa-solid fa-shield-halved"></i> 12-Month warranty on all new devices</span>
+        <span class="top-strip-divider">|</span>
+        <span><i class="fa-solid fa-location-dot"></i> Silverest Complex, Shop #1 (Opp. UNILUS)</span>
+      </div>
+      <div class="top-strip-right">
+        <!-- Direct TikTok Link -->
+        <a href="https://www.tiktok.com/@macmo.electronics2" target="_blank" rel="noopener" class="top-link" title="Follow MacMo on TikTok">
+          <i class="fa-brands fa-tiktok"></i> @macmo.electronics2
+        </a>
+        <span class="top-strip-divider">|</span>
+        <!-- Direct Facebook Link -->
+        <a href="https://www.facebook.com/p/MacMo-Electronics-61581449006021/" target="_blank" rel="noopener" class="top-link" title="Visit MacMo on Facebook">
+          <i class="fa-brands fa-facebook-f"></i> MacMo Electronics
+        </a>
+        <span class="top-strip-divider">|</span>
+        <!-- WhatsApp Hotline -->
+        <a href="https://wa.me/260972756767" target="_blank" rel="noopener" class="top-link-wa" title="Chat on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> 0972 756 767
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. STICKY HEADER -->
+  <header class="site-header">
+    <div class="header-container container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo-link" aria-label="MacMo Electronics Home">
+        <img src="images/macmo-emblem-3d.png" alt="MacMo Electronics 3D Logo" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-name">MacMo</span>
+          <span class="brand-sub">Electronics</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#store" class="nav-link">Store</a>
+        <a href="#store" class="nav-link" onclick="window.filterByCat('phones')">Smartphones</a>
+        <a href="#store" class="nav-link" onclick="window.filterByCat('gaming')">Gaming &amp; PS5</a>
+        <a href="#store" class="nav-link" onclick="window.filterByCat('computers')">Laptops</a>
+        <a href="#trade-in" class="nav-link highlight"><i class="fa-solid fa-repeat"></i> Trade-In</a>
+        <a href="#power" class="nav-link"><i class="fa-solid fa-bolt"></i> Power Backup</a>
+        <a href="#campus" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> UNILUS Perks</a>
+        <a href="#business" class="nav-link">Business</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Live Search Button -->
+        <button type="button" class="action-btn" id="search-btn" aria-label="Search Catalog" title="Search Devices (Press /)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button type="button" class="action-btn" id="wishlist-btn" aria-label="Wishlist" title="Saved Items" onclick="window.showWishlistModal()">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge" id="wish-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button type="button" class="action-btn" id="cart-btn" aria-label="Cart" title="Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="action-badge" id="cart-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Quick WhatsApp Button -->
+        <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics,%20I%20would%20like%20to%20inquire%20about%20a%20device" target="_blank" rel="noopener" class="whatsapp-fast-btn hide-on-phone" title="Chat on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Chat Now
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <nav class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="#store" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-store"></i> Store &amp; Inventory</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#store" class="mobile-nav-link" onclick="window.filterByCat('phones'); window.closeMobileNav()"><span><i class="fa-solid fa-mobile-screen-button"></i> Smartphones (Apple &amp; Samsung)</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#store" class="mobile-nav-link" onclick="window.filterByCat('gaming'); window.closeMobileNav()"><span><i class="fa-solid fa-gamepad"></i> PlayStation 5 &amp; Gaming</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#store" class="mobile-nav-link" onclick="window.filterByCat('computers'); window.closeMobileNav()"><span><i class="fa-solid fa-laptop"></i> Laptops &amp; MacBooks</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#trade-in" class="mobile-nav-link highlight" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-repeat"></i> Device Trade-In / Swap</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#power" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-bolt"></i> Power &amp; Load-Shedding Hub</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#campus" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-graduation-cap"></i> UNILUS Student Perks</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#business" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-building-columns"></i> Corporate &amp; Bulk Procurement</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#reviews" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-star"></i> Customer Reviews</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#contact" class="mobile-nav-link" onclick="window.closeMobileNav()"><span><i class="fa-solid fa-location-dot"></i> Showroom Location &amp; Hours</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="https://wa.me/260972756767" target="_blank" rel="noopener" class="mobile-nav-link wa-direct-link"><span><i class="fa-brands fa-whatsapp"></i> WhatsApp Hotline (0972 756 767)</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- 3. HERO SECTION (Refined Typography & Cohesive Luxury Aesthetic) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container container">
+        <div class="hero-pill-badge">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Shop #1, Silverest Complex &bull; Directly Opposite UNILUS Campus</span>
+        </div>
+
+        <h1 class="hero-title">
+          Technology Starts Here.
+          <span class="hero-subtitle-highlight">Smartphones, Next-Gen Gaming &amp; Student Tech.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Lusaka's premier technology and gaming destination. Genuine Apple iPhones, PlayStation consoles, M3 MacBooks, iPads, and high-capacity backup power solutions.
+        </p>
+
+        <div class="hero-actions row">
+          <a href="#store" class="btn-primary">
+            <i class="fa-solid fa-bag-shopping"></i> Explore Store
+          </a>
+          <a href="#trade-in" class="btn-secondary">
+            <i class="fa-solid fa-repeat"></i> Device Trade-In / Swap
+          </a>
+        </div>
+
+        <div class="hero-trust-row">
+          <div class="hero-trust-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Same-Day Lusaka Delivery</span>
+          </div>
+          <div class="hero-trust-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>100% Genuine Guaranteed</span>
+          </div>
+          <div class="hero-trust-item">
+            <i class="fa-solid fa-star"></i>
+            <span>4.9★ Customer Satisfaction</span>
+          </div>
+          <div class="hero-trust-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Student &amp; Campus Perks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. STORE & INVENTORY SECTION -->
+    <section class="section container" id="store">
+      <div class="section-header">
+        <span class="section-eyebrow">SHOP GENUINE ELECTRONICS</span>
+        <h2 class="section-title">Trending Devices &amp; Gear</h2>
+        <p class="section-desc">From university study to pro-level gaming and creative workflows. In stock at Shop #1 Silverest Complex.</p>
+      </div>
+
+      <!-- Category Filter Tabs (Swipeable single row on mobile) -->
+      <div class="category-tabs-container">
+        <div class="category-tabs" id="category-tabs" role="tablist">
+          <button type="button" class="cat-tab-btn active" data-cat="all"><i class="fa-solid fa-grid-2"></i> All Products</button>
+          <button type="button" class="cat-tab-btn" data-cat="phones"><i class="fa-solid fa-mobile-screen-button"></i> Smartphones</button>
+          <button type="button" class="cat-tab-btn" data-cat="gaming"><i class="fa-solid fa-gamepad"></i> PlayStation &amp; Gaming</button>
+          <button type="button" class="cat-tab-btn" data-cat="computers"><i class="fa-solid fa-laptop"></i> Laptops &amp; MacBooks</button>
+          <button type="button" class="cat-tab-btn" data-cat="tablets"><i class="fa-solid fa-tablet-screen-button"></i> iPads &amp; Tablets</button>
+          <button type="button" class="cat-tab-btn" data-cat="audio"><i class="fa-solid fa-headphones"></i> Audio &amp; Speakers</button>
+          <button type="button" class="cat-tab-btn" data-cat="power"><i class="fa-solid fa-bolt"></i> Power &amp; Backup</button>
+          <button type="button" class="cat-tab-btn" data-cat="accessories"><i class="fa-solid fa-plug"></i> Accessories</button>
+        </div>
+      </div>
+
+      <!-- Live Search & Sort Toolbar -->
+      <div class="catalog-toolbar row">
+        <div class="toolbar-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="catalog-search-input" placeholder="Search iPhones, PS5, MacBooks, power banks..." autocomplete="off">
+          <button type="button" id="clear-search-btn" class="clear-search-btn" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="toolbar-sort-box">
+          <label for="catalog-sort-select">Sort by:</label>
+          <select id="catalog-sort-select">
+            <option value="featured">Featured / Best Sellers</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid (Modern 2-column on mobile, 3/4-col on desktop) -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- 5. INTERACTIVE DEVICE TRADE-IN / SWAP CALCULATOR -->
+    <section class="trade-in-section" id="trade-in">
+      <div class="container">
+        <div class="trade-in-grid">
+          <div class="trade-in-text">
+            <span class="trade-in-eyebrow"><i class="fa-solid fa-repeat"></i> MACMO SWAP PROGRAM</span>
+            <h2>Trade In Your Old Device. Walk Out with a Brand New Flagship.</h2>
+            <p>
+              Got an iPhone 11, 12, 13, 14, Samsung Galaxy, or PS4? Don’t let it collect dust. Get instant cash valuation credit towards your dream iPhone 15 Pro Max, PS5 Slim, or M3 MacBook.
+            </p>
+            <ul class="trade-in-steps">
+              <li>
+                <span class="step-num">01</span>
+                <div>
+                  <strong>Select your current phone or console</strong>
+                  <p>Choose brand, model, and physical condition.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">02</span>
+                <div>
+                  <strong>Receive instant valuation credit</strong>
+                  <p>See estimated trade-in rebate and net amount to pay.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">03</span>
+                <div>
+                  <strong>Visit Shop #1 Silverest or WhatsApp us</strong>
+                  <p>Quick 10-minute diagnostic check and walk out upgraded.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Interactive Calculator Card -->
+          <div class="trade-in-calculator">
+            <div class="calc-header">
+              <h3><i class="fa-solid fa-calculator"></i> Instant Trade-In Valuation</h3>
+              <span class="calc-badge">Live Silverest Rates</span>
+            </div>
+
+            <form id="trade-in-form" onsubmit="event.preventDefault();">
+              <div class="form-group">
+                <label for="trade-brand">Brand of your current device</label>
+                <select id="trade-brand" class="form-select">
+                  <option value="Apple">Apple (iPhone)</option>
+                  <option value="Samsung">Samsung (Galaxy)</option>
+                  <option value="Sony">Sony PlayStation Console</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="trade-model">Current Model</label>
+                <select id="trade-model" class="form-select">
+                  <!-- Populated dynamically by app.js -->
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="trade-condition">Device Condition</label>
+                <select id="trade-condition" class="form-select">
+                  <option value="flawless">Flawless / Pristine (No scratches, 100% working)</option>
+                  <option value="good" selected>Good Condition (Minor body scuffs, fully working screen)</option>
+                  <option value="fair">Fair (Visible scratches, minor battery wear)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="trade-target">What would you like to upgrade to?</label>
+                <select id="trade-target" class="form-select">
+                  <option value="p-iphone-15-pro-max">Apple iPhone 15 Pro Max (K 24,999)</option>
+                  <option value="p-ps5-slim">Sony PlayStation 5 Slim Console (K 13,999)</option>
+                  <option value="p-macbook-air-m3">Apple MacBook Air 15" M3 (K 28,999)</option>
+                  <option value="p-samsung-galaxy-s24-ultra">Samsung Galaxy S24 Ultra (K 22,499)</option>
+                </select>
+              </div>
+
+              <!-- Output Card -->
+              <div class="trade-result-card">
+                <div class="result-row">
+                  <span>Estimated Trade-In Credit:</span>
+                  <span class="trade-credit-val" id="trade-credit-val">K 12,500.00</span>
+                </div>
+                <div class="result-row highlight">
+                  <span>Estimated Difference to Pay:</span>
+                  <span class="trade-diff-val" id="trade-diff-val">K 12,499.00</span>
+                </div>
+              </div>
+
+              <button type="button" class="btn-primary calc-submit-btn" id="book-trade-in-btn">
+                <i class="fa-brands fa-whatsapp"></i> Book Trade-In on WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. LOAD-SHEDDING POWER & BACKUP HUB -->
+    <section class="section container" id="power">
+      <div class="section-header">
+        <span class="section-eyebrow"><i class="fa-solid fa-bolt"></i> LOAD-SHEDDING SOLUTIONS</span>
+        <h2 class="section-title">Stay Powered &amp; Online Through Any Blackout</h2>
+        <p class="section-desc">Reliable high-capacity portable power stations and fast-charging power banks in stock at Silverest. Run Wi-Fi routers, laptops, gaming setups, and study stations with zero interruption.</p>
+      </div>
+
+      <div class="power-grid grid">
+        <!-- Power Solution 1 -->
+        <div class="power-card">
+          <div class="power-card-header">
+            <span class="power-tag">Heavy Duty Portable</span>
+            <h3>Oraimo PowerBox 40,000mAh</h3>
+            <span class="power-price">K 1,299.00</span>
+          </div>
+          <p class="power-desc">Charges your smartphones 8 to 10 times, powers USB study lamps, and supports fast PD 22.5W dual charging with real-time digital percentage display.</p>
+          <ul class="power-features">
+            <li><i class="fa-solid fa-check"></i> 40,000mAh Ultra-High Capacity</li>
+            <li><i class="fa-solid fa-check"></i> Dual USB-C + Dual USB-A Ports</li>
+            <li><i class="fa-solid fa-check"></i> Digital LED Battery Gauge</li>
+            <li><i class="fa-solid fa-check"></i> Airplane &amp; Campus Safe</li>
+          </ul>
+          <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics,%20I%20would%20like%20to%20order%20the%20Oraimo%2040,000mAh%20PowerBank%20(K%201,299)." target="_blank" rel="noopener" class="btn-power">
+            <i class="fa-brands fa-whatsapp"></i> Order PowerBank Now
+          </a>
+        </div>
+
+        <!-- Power Solution 2 (Featured) -->
+        <div class="power-card featured">
+          <div class="power-card-header">
+            <span class="power-tag featured">Complete Home &amp; Study UPS</span>
+            <h3>EcoFlow River 2 Max 600W Inverter</h3>
+            <span class="power-price">K 9,499.00</span>
+          </div>
+          <p class="power-desc">Powers your TV, Wi-Fi router, MacBook, and gaming station during Lusaka load-shedding. Fast 60-minute wall recharge via official LiFePO4 cells with a 10-year lifespan.</p>
+          <ul class="power-features">
+            <li><i class="fa-solid fa-check"></i> 512Wh Capacity &bull; 600W (Surge 1000W)</li>
+            <li><i class="fa-solid fa-check"></i> Dual Pure Sine Wave 220V AC Outlets</li>
+            <li><i class="fa-solid fa-check"></i> 0 to 100% Recharge in 60 Minutes</li>
+            <li><i class="fa-solid fa-check"></i> LiFePO4 Battery with 3000+ Cycles</li>
+          </ul>
+          <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics,%20I%20would%20like%20to%20inquire%20about%20the%20EcoFlow%20River%202%20Max%20Station%20(K%209,499)." target="_blank" rel="noopener" class="btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fa-brands fa-whatsapp"></i> Inquire Station on WhatsApp
+          </a>
+        </div>
+
+        <!-- Power Solution 3 -->
+        <div class="power-card">
+          <div class="power-card-header">
+            <span class="power-tag">Laptop &amp; Multi-Device</span>
+            <h3>Romoss 60,000mAh Power Station</h3>
+            <span class="power-price">K 1,950.00</span>
+          </div>
+          <p class="power-desc">Huge multi-day energy reserve for university group study sessions, field assignments, and keeping laptops and routers online through weekend power cuts.</p>
+          <ul class="power-features">
+            <li><i class="fa-solid fa-check"></i> 60,000mAh Massive Backup</li>
+            <li><i class="fa-solid fa-check"></i> 100W PD Ultra-Fast Charging</li>
+            <li><i class="fa-solid fa-check"></i> 4 Concurrent Device Outlets</li>
+            <li><i class="fa-solid fa-check"></i> Integrated Emergency Work Light</li>
+          </ul>
+          <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics,%20I%20would%20like%20to%20order%20the%20Romoss%2060,000mAh%20Power%20Station%20(K%201,950)." target="_blank" rel="noopener" class="btn-power">
+            <i class="fa-brands fa-whatsapp"></i> Order 60,000mAh Bank
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. UNILUS CAMPUS & STUDENT PERKS -->
+    <section class="section container" id="campus">
+      <div class="campus-clean-box">
+        <div class="section-header" style="margin-bottom: 24px;">
+          <span class="section-eyebrow"><i class="fa-solid fa-graduation-cap"></i> UNILUS SILVEREST CAMPUS HUB</span>
+          <h2 class="section-title">Located Directly Opposite UNILUS Campus</h2>
+          <p class="section-desc">Free 15-minute hand delivery to hostels, student reservation layaways, and study discounts.</p>
+        </div>
+        <div class="campus-perks-grid grid">
+          <div class="campus-perk-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h4>Free Campus Drop-Off</h4>
+            <p>Direct doorstep delivery to UNILUS hostels and lecture complexes within 15 minutes.</p>
+          </div>
+          <div class="campus-perk-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h4>Load-Shedding Study Backup</h4>
+            <p>High-capacity power banks and backup stations in stock to keep your laptops and Wi-Fi powered.</p>
+          </div>
+          <div class="campus-perk-card">
+            <i class="fa-solid fa-gamepad"></i>
+            <h4>Gaming &amp; Trade-In Perks</h4>
+            <p>Student swap allowances, trade-in credit, and official PlayStation console maintenance.</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 24px;">
+          <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics,%20I%20am%20a%20UNILUS%20student%20inquiring%20about%20campus%20deals." target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> Chat with Student Desk on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CORPORATE, BUSINESS & CAMPUS PROCUREMENT -->
+    <section class="section container" id="business">
+      <div class="section-header">
+        <span class="section-eyebrow"><i class="fa-solid fa-building-columns"></i> ENTERPRISE &amp; INSTITUTIONAL</span>
+        <h2 class="section-title">Corporate Fleet &amp; Bulk Procurement</h2>
+        <p class="section-desc">We supply verified laptops, executive flagships, and backup power stations for companies, law firms, NGOs, and UNILUS departments with official ZRA VAT invoices.</p>
+      </div>
+
+      <div class="b2b-cards-grid grid">
+        <div class="b2b-card">
+          <div class="b2b-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Corporate Fleet Laptops &amp; PCs</h3>
+          <span class="b2b-sub">MacBooks, Dell Latitude, HP ProBook</span>
+          <p>Bulk deployment of productivity laptops with OS setup, asset tagging, and 12-month manufacturer warranty.</p>
+          <div class="b2b-tags">
+            <span class="tag-chip">ZRA VAT Invoice</span>
+            <span class="tag-chip">Volume Discount</span>
+            <span class="tag-chip">Asset Tagging</span>
+          </div>
+        </div>
+
+        <div class="b2b-card">
+          <div class="b2b-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+          <h3>Commercial Backup Inverters</h3>
+          <span class="b2b-sub">EcoFlow &bull; Solar UPS Systems</span>
+          <p>Prevent office downtime during load-shedding. Run multi-workstation offices, routers, and POS systems.</p>
+          <div class="b2b-tags">
+            <span class="tag-chip">Zero Downtime</span>
+            <span class="tag-chip">Fast Recharge</span>
+            <span class="tag-chip">LiFePO4 Chemistry</span>
+          </div>
+        </div>
+
+        <div class="b2b-card">
+          <div class="b2b-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Executive Flagship Bundles</h3>
+          <span class="b2b-sub">iPhone 15 Pro &bull; Galaxy S24 Ultra &bull; iPads</span>
+          <p>Equip management and field teams with flagship mobile gear, military-grade protective cases, and rapid trade-ins.</p>
+          <div class="b2b-tags">
+            <span class="tag-chip">Original OEM</span>
+            <span class="tag-chip">Fleet Trade-In</span>
+            <span class="tag-chip">Dedicated Manager</span>
+          </div>
+        </div>
+
+        <div class="b2b-card">
+          <div class="b2b-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Educational &amp; Studio Labs</h3>
+          <span class="b2b-sub">UNILUS &bull; Colleges &bull; Creative Labs</span>
+          <p>Special educational pricing for computer labs, audio-visual equipment, and student recreation PlayStation suites.</p>
+          <div class="b2b-tags">
+            <span class="tag-chip">Campus Rates</span>
+            <span class="tag-chip">Same-Day Delivery</span>
+            <span class="tag-chip">30-Min Quotations</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 28px;">
+        <a href="https://wa.me/260972756767?text=Hello%20MacMo%20Electronics,%20I%20would%20like%20to%20request%20a%20formal%20business%20quotation%20for%20our%20organization." target="_blank" rel="noopener" class="btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Request Formal Business Quotation
+        </a>
+      </div>
+    </section>
+
+    <!-- 9. CUSTOMER REVIEWS & TESTIMONIALS -->
+    <section class="section container" id="reviews">
+      <div class="section-header">
+        <span class="section-eyebrow"><i class="fa-solid fa-star"></i> VERIFIED CUSTOMER EXPERIENCES</span>
+        <h2 class="section-title">Trusted Across Lusaka &amp; UNILUS</h2>
+        <p class="section-desc">See why hundreds of university students, gamers, and working professionals choose MacMo Electronics.</p>
+      </div>
+
+      <div class="reviews-grid grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Traded in my iPhone 12 Pro Max for the brand-new iPhone 15 Pro Max at Shop #1 Silverest. The diagnostic valuation took less than 10 minutes and the valuation price was completely fair!"</p>
+          <div class="reviewer-meta">
+            <strong>Mwila Chileshe</strong>
+            <span>UNILUS Law Student &bull; Verified Buyer</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Bought my PS5 Slim console and extra DualSense controller here. They delivered right to our hostel gate within 15 minutes of messaging them on WhatsApp. 100% genuine and sealed."</p>
+          <div class="reviewer-meta">
+            <strong>Patrick Banda</strong>
+            <span>Lusaka Gamer &bull; Verified Buyer</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Got the portable EcoFlow backup power station for our boutique consultancy during load-shedding. It keeps our laptops and Wi-Fi running seamlessly. Super reliable service!"</p>
+          <div class="reviewer-meta">
+            <strong>Bwalya Tembo</strong>
+            <span>Business Consultant, Lusaka &bull; Verified Buyer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONNECT WITH MACMO (TikTok & Facebook Community) -->
+    <section class="section container" id="social-community">
+      <div class="section-header">
+        <span class="section-eyebrow">COMMUNITY &amp; SOCIAL DROPS</span>
+        <h2 class="section-title">Follow MacMo on TikTok &amp; Facebook</h2>
+        <p class="section-desc">Watch live device unboxings, gaming showdowns, student tech tips, and new consignment arrivals.</p>
+      </div>
+
+      <div class="social-cards-grid grid">
+        <!-- TikTok Card -->
+        <div class="clean-social-card tiktok-card">
+          <div class="social-card-top">
+            <i class="fa-brands fa-tiktok social-card-icon"></i>
+            <div>
+              <span class="social-card-handle">@macmo.electronics2</span>
+              <span class="social-card-sub">Official TikTok Channel</span>
+            </div>
+          </div>
+          <p class="social-card-text">
+            Catch fast unboxings, gaming performance battles, and flash discount codes exclusively on our daily TikTok videos.
+          </p>
+          <a href="https://www.tiktok.com/@macmo.electronics2" target="_blank" rel="noopener" class="social-card-btn tiktok">
+            <i class="fa-brands fa-tiktok"></i> Follow on TikTok
+          </a>
+        </div>
+
+        <!-- Facebook Card -->
+        <div class="clean-social-card facebook-card">
+          <div class="social-card-top">
+            <i class="fa-brands fa-facebook-f social-card-icon"></i>
+            <div>
+              <span class="social-card-handle">MacMo Electronics</span>
+              <span class="social-card-sub">Official Facebook Page</span>
+            </div>
+          </div>
+          <p class="social-card-text">
+            Browse our full photo catalog, view customer collection receipts, and message our Silverest showroom team anytime.
+          </p>
+          <a href="https://www.facebook.com/p/MacMo-Electronics-61581449006021/" target="_blank" rel="noopener" class="social-card-btn facebook">
+            <i class="fa-brands fa-facebook-f"></i> Follow on Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. PHYSICAL SHOWROOM & CONTACT -->
+    <section class="section container" id="contact" style="padding-bottom: 40px;">
+      <div class="section-header">
+        <span class="section-eyebrow">VISIT US IN PERSON</span>
+        <h2 class="section-title">Shop #1, Silverest Complex, Lusaka</h2>
+        <p class="section-desc">Drop by our showroom at Silverest Complex or order online for prompt same-day delivery.</p>
+      </div>
+
+      <div class="contact-box-grid grid">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>Physical Showroom</h3>
+          <p>
+            <strong>Shop #1, Silverest Complex</strong><br>
+            Great East Road, Lusaka, Zambia<br>
+            <em>(Directly opposite UNILUS Silverest Campus)</em>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+          <h3>Opening Hours</h3>
+          <p>
+            <strong>Monday – Saturday:</strong> 8:30 AM – 6:30 PM<br>
+            <strong>Sunday:</strong> 10:00 AM – 4:00 PM<br>
+            <em>Walk-ins welcomed everyday.</em>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3>Hotline &amp; WhatsApp</h3>
+          <p>
+            <strong>Primary Line:</strong> <a href="tel:+260972756767">+260 972 756 767</a><br>
+            <strong>Secondary Line:</strong> <a href="tel:+260572408101">+260 572 408 101</a><br>
+            <strong>WhatsApp:</strong> <a href="https://wa.me/260972756767" target="_blank" rel="noopener">Chat Instantly</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 12. COMPLETE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container container">
+      <!-- Brand & 3D Logo Column -->
+      <div class="footer-col brand-col">
+        <a href="#hero" class="footer-logo-link" aria-label="MacMo Electronics Home">
+          <img src="images/macmo-logo-3d-trans.png" alt="MacMo Electronics 3D Logo" class="footer-logo-img">
+        </a>
+        <p class="footer-about">
+          Lusaka's premier gadget and electronics hub. Genuine Apple, Samsung, Sony PlayStation, and tech accessories with 12-month warranty and rapid Zambian delivery.
+        </p>
+        <div class="footer-social-row">
+          <a href="https://www.tiktok.com/@macmo.electronics2" target="_blank" rel="noopener" class="footer-social-btn tiktok" title="Follow MacMo on TikTok" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.facebook.com/p/MacMo-Electronics-61581449006021/" target="_blank" rel="noopener" class="footer-social-btn facebook" title="Visit MacMo on Facebook" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/260972756767" target="_blank" rel="noopener" class="footer-social-btn whatsapp" title="Chat with MacMo on WhatsApp" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Shop Categories</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#store" onclick="window.filterByCat('phones')"><i class="fa-solid fa-angle-right"></i> Smartphones &amp; iPhones</a></li>
+          <li><a href="#store" onclick="window.filterByCat('gaming')"><i class="fa-solid fa-angle-right"></i> PlayStation &amp; Games</a></li>
+          <li><a href="#store" onclick="window.filterByCat('computers')"><i class="fa-solid fa-angle-right"></i> MacBooks &amp; Laptops</a></li>
+          <li><a href="#store" onclick="window.filterByCat('tablets')"><i class="fa-solid fa-angle-right"></i> iPads &amp; Galaxy Tabs</a></li>
+          <li><a href="#store" onclick="window.filterByCat('audio')"><i class="fa-solid fa-angle-right"></i> AirPods &amp; JBL Audio</a></li>
+          <li><a href="#power"><i class="fa-solid fa-angle-right"></i> Power &amp; Backup Inverters</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Services &amp; Perks</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#trade-in"><i class="fa-solid fa-angle-right"></i> Device Trade-In / Swap</a></li>
+          <li><a href="#campus"><i class="fa-solid fa-angle-right"></i> UNILUS Student Deals</a></li>
+          <li><a href="#power"><i class="fa-solid fa-angle-right"></i> Load-Shedding Inverters</a></li>
+          <li><a href="#business"><i class="fa-solid fa-angle-right"></i> Corporate Quotations</a></li>
+          <li><a href="#social-community"><i class="fa-solid fa-angle-right"></i> TikTok &amp; Facebook</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Same-Day Lusaka Delivery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Payment &amp; Delivery</h4>
+        <ul class="footer-badges-list">
+          <li class="footer-badge-item"><i class="fa-solid fa-mobile-screen"></i> Airtel Money &bull; MTN MoMo</li>
+          <li class="footer-badge-item"><i class="fa-solid fa-building-columns"></i> Bank Transfer (ZMW)</li>
+          <li class="footer-badge-item"><i class="fa-solid fa-money-bill-wave"></i> Cash on Delivery / Pickup</li>
+          <li class="footer-badge-item"><i class="fa-solid fa-truck-fast"></i> Lusaka Same-Day Express</li>
+          <li class="footer-badge-item"><i class="fa-solid fa-plane-departure"></i> Countrywide Courier (EMS)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner container">
+        <p>&copy; 2026 MacMo Electronics. All rights reserved. Shop #1, Silverest Complex, Great East Road, Lusaka.</p>
+        <div class="footer-badges">
+          <span class="trust-chip"><i class="fa-solid fa-shield-halved"></i> 100% Authentic Tech</span>
+          <span class="trust-chip"><i class="fa-solid fa-certificate"></i> 12-Month Official Warranty</span>
+          <span class="trust-chip"><i class="fa-solid fa-check"></i> Google Business Verified</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 13. CART SLIDE-OUT DRAWER -->
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <div class="cart-title-wrap">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Your Shopping Bag</h3>
+        <span class="cart-items-count" id="drawer-item-count">0 items</span>
+      </div>
+      <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="Close Cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-body">
+      <div class="cart-items-list" id="cart-items-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-delivery-note">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>Free UNILUS campus delivery &bull; Same-day Lusaka express</span>
+      </div>
+
+      <div class="cart-subtotal-row">
+        <span>Estimated Total:</span>
+        <span class="cart-subtotal" id="cart-subtotal">K 0.00</span>
+      </div>
+
+      <button type="button" class="btn-primary checkout-btn" id="checkout-wa-btn">
+        <i class="fa-brands fa-whatsapp"></i> Complete Order on WhatsApp
+      </button>
+
+      <p class="cart-disclaimer">Orders are confirmed instantly via WhatsApp with our Silverest store manager.</p>
+    </div>
+  </aside>
+  <div class="drawer-overlay" id="cart-drawer-overlay"></div>
+
+  <!-- 14. LIVE SEARCH MODAL -->
+  <div class="modal-overlay" id="search-modal-overlay" style="display: none;">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <i class="fa-solid fa-magnifying-glass search-modal-icon"></i>
+        <input type="text" id="modal-search-input" placeholder="Search devices by name, brand, or feature..." autocomplete="off">
+        <button type="button" class="modal-close-btn" id="search-close-btn" aria-label="Close search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="search-modal-results" id="search-modal-results">
+        <!-- Live search matches -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 15. TOAST NOTIFICATIONS -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="products-data.js?v=6.0"></script>
+  <script src="app.js?v=6.0"></script>
+</body>
+</html>
